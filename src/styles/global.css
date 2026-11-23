@@ -209,9 +209,10 @@ button {
 .home-desktop__track {
   display: flex;
   flex-wrap: nowrap;
+  gap: 110px;
   height: 100vh;
   padding-left: var(--canvas-offset);
-  padding-right: 120px;
+  padding-right: 140px;
   width: max-content;
   position: relative;
   z-index: 8;
@@ -219,98 +220,74 @@ button {
 
 .project-cluster {
   position: relative;
-  width: var(--cluster-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   height: 100vh;
+  padding: 11vh 0 36px;
+  gap: 28px;
   flex-shrink: 0;
-  transition: opacity 0.2s ease;
+  width: max-content;
 }
 
 .slot-box {
-  position: absolute;
-}
-
-.slot-box a {
-  display: block;
   position: relative;
+  flex-shrink: 0;
 }
 
-.slot-box--1 {
-  top: 13vh;
-  left: 0;
-}
-
-.slot-box--2 {
-  bottom: 30px;
-  left: 0;
-}
-
-.slot-box--3 {
-  top: 13vh;
-  left: 480px;
-}
-
-.slot-box--4 {
-  bottom: 30px;
-  left: 480px;
+.slot-link {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
 }
 
 .slot-media {
   display: block;
   width: auto;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   background: #e4e4e4;
 }
 
 .slot-box--1 .slot-media {
-  height: min(440px, 46vh);
+  max-height: min(440px, 46vh);
+  max-width: 560px;
 }
 
 .slot-box--2 .slot-media {
-  height: min(210px, 24vh);
-}
-
-.slot-box--2 .slot-media.is-horizontal {
-  height: min(160px, 19vh);
-}
-
-.slot-box--3 .slot-media {
-  height: min(300px, 34vh);
-}
-
-.slot-box--3 .slot-media.is-horizontal {
-  height: min(220px, 25vh);
-}
-
-.slot-box--4 .slot-media {
-  height: min(280px, 31vh);
+  max-height: min(220px, 24vh);
+  max-width: 340px;
 }
 
 .slot-meta {
-  position: absolute;
-  bottom: 145px;
-  left: -180px;
-  width: 320px;
-  transform: rotate(-90deg);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
   display: flex;
-  align-items: baseline;
-  gap: 28px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   white-space: nowrap;
   pointer-events: none;
   color: var(--fg);
+  font-size: 11px;
+  line-height: 1;
+  flex-shrink: 0;
   transition: color 0.15s ease;
 }
 
+.slot-meta__main {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .slot-meta--category {
-  bottom: 112px;
-  left: -172px;
+  justify-content: flex-start;
 }
 
 .project-cluster.is-hovered .slot-meta {
   color: var(--fg-muted);
-}
-
-.slot-meta__year {
-  margin-left: auto;
 }
 
 /* Full-screen hover backdrop — strictly BEHIND the entire feed (z-index: 1 < .home-desktop z-index: 5) */

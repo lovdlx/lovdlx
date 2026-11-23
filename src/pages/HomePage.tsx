@@ -100,11 +100,13 @@ export function HomePage({
                       setBackdropSrc(null);
                     }}
                   >
-                    <Link to={`/project/${project.slug}`}>
+                    <Link to={`/project/${project.slug}`} className="slot-link">
                       {slot.position === 1 && (
                         <div className="slot-meta">
-                          <span>{project.roman}</span>
-                          <span>{project.client}</span>
+                          <span className="slot-meta__main">
+                            <span>{project.roman}</span>
+                            <span>{project.client}</span>
+                          </span>
                           <span className="slot-meta__year">{project.year}</span>
                         </div>
                       )}
@@ -118,11 +120,7 @@ export function HomePage({
                         src={slot.src}
                         alt={slot.alt}
                         loading={projectIdx < 2 ? 'eager' : 'lazy'}
-                        className={`slot-media ${
-                          slot.orientation === 'horizontal'
-                            ? 'is-horizontal'
-                            : ''
-                        }`}
+                        className="slot-media"
                       />
                     </Link>
                   </div>
