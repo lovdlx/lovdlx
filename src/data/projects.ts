@@ -7,7 +7,7 @@ export interface ProjectSlot {
   fullSrc?: string;
   alt: string;
   orientation?: 'vertical' | 'horizontal';
-  /** Slot position in the 900px desktop cluster: 1=top-left, 2=bottom-left, 3=top-right, 4=bottom-right */
+  /** Slot position in the desktop cluster: 1=top, 2=bottom */
   position: 1 | 2 | 3 | 4;
 }
 
@@ -33,10 +33,74 @@ export interface Project {
   slides: ProjectSlide[];
 }
 
-export const PROJECTS: Project[] = [
+const resolveUrl = (url: string): string =>
+  /^https?:\/\//.test(url) ? url : `${import.meta.env.BASE_URL}${url.replace(/^\//, '')}`;
+
+const RAW_PROJECTS: Project[] = [
   {
     "id": "client-1",
     "roman": "I",
+    "slug": "echotypes-art-direction",
+    "client": "Echotypes Art Direction",
+    "year": "2025",
+    "category": "Art Direction & Brand Positioning",
+    "description": "Art direction, brand positioning, and visual communication system for Echotypes — an independent Moscow music event series hosted at fābula HQ.\n\nThe project focused on defining a cohesive cultural positioning and visual language across recurring editions (Volume01, Echotypes Live). I developed the key visuals, typographic hierarchy, and digital communication materials — combining raw flash photography, blackletter and neo-grotesque typography, and stark editorial contrast to build a recognizable voice within the local underground music scene.",
+    "slots": [
+      {
+        "id": "echotypes-s1",
+        "kind": "image",
+        "src": "media/echotypes/01.jpg",
+        "fullSrc": "media/echotypes/01.jpg",
+        "alt": "Echotypes Live — key visual 01",
+        "position": 1
+      },
+      {
+        "id": "echotypes-s2",
+        "kind": "image",
+        "src": "media/echotypes/04.jpg",
+        "fullSrc": "media/echotypes/04.jpg",
+        "alt": "Echotypes Live — key visual 02",
+        "position": 2
+      }
+    ],
+    "slides": [
+      {
+        "id": "echotypes-sl1",
+        "kind": "image",
+        "src": "media/echotypes/01.jpg",
+        "alt": "Echotypes Live — key visual 01",
+        "role": "Art Direction, Key Visuals & Brand Positioning",
+        "credits": "Semyon Shvetsov · fābula HQ, Moscow"
+      },
+      {
+        "id": "echotypes-sl2",
+        "kind": "image",
+        "src": "media/echotypes/04.jpg",
+        "alt": "Echotypes Live — red/white key visual",
+        "role": "Key Visual & Communication System",
+        "credits": "Semyon Shvetsov · fābula HQ, Moscow"
+      },
+      {
+        "id": "echotypes-sl3",
+        "kind": "image",
+        "src": "media/echotypes/03.jpg",
+        "alt": "Echotypes — lineup poster",
+        "role": "Art Direction & Poster Design",
+        "credits": "Semyon Shvetsov · fābula HQ, Moscow"
+      },
+      {
+        "id": "echotypes-sl4",
+        "kind": "image",
+        "src": "media/echotypes/02.jpg",
+        "alt": "Volume01 — lineup poster",
+        "role": "Brand Positioning & Visual Communications",
+        "credits": "Semyon Shvetsov · fābula HQ, Moscow"
+      }
+    ]
+  },
+  {
+    "id": "client-2",
+    "roman": "II",
     "slug": "kintsugi-jewelry",
     "client": "Kintsugi Jewelry",
     "year": "2024",
@@ -168,8 +232,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-2",
-    "roman": "II",
+    "id": "client-3",
+    "roman": "III",
     "slug": "9mice",
     "client": "9mice Afterparty",
     "year": "2024",
@@ -221,8 +285,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-3",
-    "roman": "III",
+    "id": "client-4",
+    "roman": "IV",
     "slug": "demix-x-aytlo",
     "client": "Demix × Outlaw",
     "year": "2025",
@@ -274,8 +338,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-4",
-    "roman": "IV",
+    "id": "client-5",
+    "roman": "V",
     "slug": "void",
     "client": "VOID",
     "year": "2024",
@@ -399,8 +463,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-5",
-    "roman": "V",
+    "id": "client-6",
+    "roman": "VI",
     "slug": "aperol",
     "client": "Aperol",
     "year": "2024",
@@ -484,8 +548,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-6",
-    "roman": "VI",
+    "id": "client-7",
+    "roman": "VII",
     "slug": "natura-siberica",
     "client": "Natura Siberica",
     "year": "2024",
@@ -609,8 +673,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-7",
-    "roman": "VII",
+    "id": "client-8",
+    "roman": "VIII",
     "slug": "music-typography-research-book",
     "client": "Music Typography",
     "year": "2024",
@@ -734,8 +798,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-8",
-    "roman": "VIII",
+    "id": "client-9",
+    "roman": "IX",
     "slug": "glofi",
     "client": "Glofi",
     "year": "2024",
@@ -867,8 +931,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-9",
-    "roman": "IX",
+    "id": "client-10",
+    "roman": "X",
     "slug": "4",
     "client": "4 (MV)",
     "year": "2025",
@@ -1000,8 +1064,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-10",
-    "roman": "X",
+    "id": "client-11",
+    "roman": "XI",
     "slug": "zavernite",
     "client": "Zavernite",
     "year": "2024",
@@ -1125,8 +1189,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-11",
-    "roman": "XI",
+    "id": "client-12",
+    "roman": "XII",
     "slug": "modular",
     "client": "Modular",
     "year": "2024",
@@ -1210,8 +1274,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-12",
-    "roman": "XII",
+    "id": "client-13",
+    "roman": "XIII",
     "slug": "nn-creative",
     "client": "NN Creative",
     "year": "2024",
@@ -1287,8 +1351,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-13",
-    "roman": "XIII",
+    "id": "client-14",
+    "roman": "XIV",
     "slug": "bariers",
     "client": "Bariers",
     "year": "2024",
@@ -1356,8 +1420,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-14",
-    "roman": "XIV",
+    "id": "client-15",
+    "roman": "XV",
     "slug": "posters-flyers",
     "client": "Posters & Flyers",
     "year": "2024",
@@ -1365,23 +1429,31 @@ export const PROJECTS: Project[] = [
     "description": "",
     "slots": [
       {
+        "id": "posters-flyers-s-mainstaff",
+        "kind": "image",
+        "src": "media/posters/mainstaff.jpg",
+        "fullSrc": "media/posters/mainstaff.jpg",
+        "alt": "MAIN STAFF — Factory 3 poster",
+        "position": 1
+      },
+      {
         "id": "posters-flyers-s1",
         "kind": "image",
         "src": "https://framerusercontent.com/images/VUZgDhPOCzteegtluBxIqaN7hg.png",
         "fullSrc": "https://framerusercontent.com/images/VUZgDhPOCzteegtluBxIqaN7hg.png",
         "alt": "Posters & Flyers — visual 1",
-        "position": 1
-      },
-      {
-        "id": "posters-flyers-s2",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/StAg5sufhBSJL8MYaqPBIgPMUEg.png",
-        "fullSrc": "https://framerusercontent.com/images/StAg5sufhBSJL8MYaqPBIgPMUEg.png",
-        "alt": "Posters & Flyers — visual 2",
         "position": 2
       }
     ],
     "slides": [
+      {
+        "id": "posters-flyers-mainstaff",
+        "kind": "image",
+        "src": "media/posters/mainstaff.jpg",
+        "alt": "MAIN STAFF — Factory 3 poster",
+        "role": "Poster & Flyer Design",
+        "credits": "Semyon Shvetsov · Factory 3"
+      },
       {
         "id": "posters-flyers-sl1",
         "kind": "image",
@@ -1441,8 +1513,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-15",
-    "roman": "XV",
+    "id": "client-16",
+    "roman": "XVI",
     "slug": "music-covers",
     "client": "Music Covers",
     "year": "2024",
@@ -1510,8 +1582,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-16",
-    "roman": "XVI",
+    "id": "client-17",
+    "roman": "XVII",
     "slug": "plgthg-na-svalke",
     "client": "plgthg — na svalke",
     "year": "2024",
@@ -1563,8 +1635,8 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-17",
-    "roman": "XVII",
+    "id": "client-18",
+    "roman": "XVIII",
     "slug": "metasystem-promo",
     "client": "Metasystem Promo",
     "year": "2024",
@@ -1592,6 +1664,19 @@ export const PROJECTS: Project[] = [
     ]
   }
 ];
+
+export const PROJECTS: Project[] = RAW_PROJECTS.map((project) => ({
+  ...project,
+  slots: project.slots.map((slot) => ({
+    ...slot,
+    src: resolveUrl(slot.src),
+    fullSrc: slot.fullSrc ? resolveUrl(slot.fullSrc) : undefined,
+  })),
+  slides: project.slides.map((slide) => ({
+    ...slide,
+    src: resolveUrl(slide.src),
+  })),
+}));
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return PROJECTS.find((p) => p.slug === slug);
