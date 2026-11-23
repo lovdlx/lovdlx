@@ -1,0 +1,28 @@
+/* Optional local Times Now Light font: drop woff2 into public/fonts/ to activate automatically */
+/*
+@font-face {
+  font-family: 'Times Now';
+  src: url('/fonts/TimesNow-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+:root {
+  --bg: #f1f1f1;
+  --fg: #000000;
+  --fg-muted: #747474;
+
+  --font-editorial: 'Times Now', 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-size-desktop: 12px;
+  --font-size-mobile: 14px;
+  --line-height-base: 1.42857143;
+
+  --sidebar-expanded: 350px;
+  --sidebar-collapsed: 75px;
+  --canvas-offset: 420px;
+  --cluster-width: 900px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
