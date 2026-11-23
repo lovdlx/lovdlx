@@ -399,6 +399,20 @@ button {
   gap: 20px;
 }
 
+.project-credits__description {
+  max-width: 46ch;
+  line-height: 1.55;
+  color: var(--fg);
+  white-space: pre-line;
+}
+
+.project-credits__meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--fg-muted);
+}
+
 .project-credits__controls {
   margin-top: 24px;
   display: flex;

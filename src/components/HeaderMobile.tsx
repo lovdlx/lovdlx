@@ -92,6 +92,17 @@ export function HeaderMobile() {
                 {SITE.instagramHandle}
               </a>
             </li>
+            {SITE.telegramHandle && SITE.telegramUrl && (
+              <li>
+                <a
+                  href={SITE.telegramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {SITE.telegramHandle}
+                </a>
+              </li>
+            )}
             {SITE.secondaryLinkLabel && SITE.secondaryLinkUrl && (
               <li style={{ marginTop: 12 }}>
                 <a

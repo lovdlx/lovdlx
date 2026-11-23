@@ -73,6 +73,12 @@ export function ProjectPage() {
             {currentSlide.credits && <p>{currentSlide.credits}</p>}
           </div>
 
+          {project.description && (
+            <p className="project-credits__description">
+              {project.description}
+            </p>
+          )}
+
           <div className="project-credits__controls">
             <button type="button" onClick={prev}>
               PREV
