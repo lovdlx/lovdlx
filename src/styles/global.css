@@ -194,9 +194,10 @@ button {
 .home-desktop {
   position: fixed;
   inset: 0;
+  z-index: 5;
   overflow-x: auto;
   overflow-y: hidden;
-  background: var(--bg);
+  background: transparent;
   cursor: url('/cursor-next.svg') 12 12, e-resize;
   scrollbar-width: none;
 }
@@ -214,11 +215,6 @@ button {
   width: max-content;
   position: relative;
   z-index: 8;
-}
-
-.home-desktop.has-hover .project-cluster:not(.is-hovered) {
-  opacity: 0.35;
-  transition: opacity 0.2s ease;
 }
 
 .project-cluster {
@@ -317,20 +313,20 @@ button {
   margin-left: auto;
 }
 
-/* Full-screen hover backdrop */
+/* Full-screen hover backdrop — strictly BEHIND the entire feed (z-index: 1 < .home-desktop z-index: 5) */
 .fullsize-backdrop {
   position: fixed;
   inset: 0;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 0.18s var(--ease-out);
+  transition: opacity 0.15s var(--ease-out);
 }
 
 .fullsize-backdrop.is-visible {
-  opacity: 0.94;
+  opacity: 1;
 }
 
 /* Mobile Home Feed */
