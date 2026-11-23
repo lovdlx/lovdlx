@@ -58,22 +58,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/V1TS935v2yI2tXch4Axefm6Sc.png",
         "alt": "Kintsugi Jewelry — visual 2",
         "position": 2
-      },
-      {
-        "id": "kintsugi-jewelry-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1v1LjK59Yc25kqk67g2ZAbUmao.png",
-        "fullSrc": "https://framerusercontent.com/images/1v1LjK59Yc25kqk67g2ZAbUmao.png",
-        "alt": "Kintsugi Jewelry — visual 3",
-        "position": 3
-      },
-      {
-        "id": "kintsugi-jewelry-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/lv3F7PYT1uEU9kLIHxPUj4yqo.png",
-        "fullSrc": "https://framerusercontent.com/images/lv3F7PYT1uEU9kLIHxPUj4yqo.png",
-        "alt": "Kintsugi Jewelry — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -186,141 +170,53 @@ export const PROJECTS: Project[] = [
   {
     "id": "client-2",
     "roman": "II",
-    "slug": "natura-siberica",
-    "client": "Natura Siberica",
+    "slug": "9mice",
+    "client": "9mice Afterparty",
     "year": "2024",
-    "category": "Packaging Design",
-    "description": "Implemented and unrealized projects created as part of the work on packaging in the Natura Siberica brand. In addition to developing concepts and visualizations, much attention was paid to prepress preparation, technical studies and high-quality implementation",
+    "category": "Art Direction & Key Visual",
+    "description": "9mice (born Sergey Igorevich Dmitriev on August 27, 2000) is a Russian experimental hip-hop artist, producer, and creative director. Together with fellow musician Kai Angel, he forms the influential creative duo and aesthetic movement VIPERR , which reshaped the Russian-speaking underground and alternative rap scene in the mid-2020s.",
     "slots": [
       {
-        "id": "natura-siberica-s1",
+        "id": "9mice-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
-        "fullSrc": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
-        "alt": "Natura Siberica — visual 1",
+        "src": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
+        "fullSrc": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
+        "alt": "9mice Afterparty — visual 1",
         "position": 1
       },
       {
-        "id": "natura-siberica-s2",
+        "id": "9mice-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
-        "fullSrc": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
-        "alt": "Natura Siberica — visual 2",
+        "src": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
+        "fullSrc": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
+        "alt": "9mice Afterparty — visual 2",
         "position": 2
-      },
-      {
-        "id": "natura-siberica-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/yrD1rG6XRyo6xVKyhBZmbMVTCwo.png",
-        "fullSrc": "https://framerusercontent.com/images/yrD1rG6XRyo6xVKyhBZmbMVTCwo.png",
-        "alt": "Natura Siberica — visual 3",
-        "position": 3
-      },
-      {
-        "id": "natura-siberica-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/aMydGSb6D324jTefSLaAXB1nA.png",
-        "fullSrc": "https://framerusercontent.com/images/aMydGSb6D324jTefSLaAXB1nA.png",
-        "alt": "Natura Siberica — visual 4",
-        "position": 4
       }
     ],
     "slides": [
       {
-        "id": "natura-siberica-sl1",
+        "id": "9mice-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
-        "alt": "Natura Siberica — slide 1",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+        "src": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
+        "alt": "9mice Afterparty — slide 1",
+        "role": "Key Visuals & Poster Design",
+        "credits": "Semyon Shvetsov"
       },
       {
-        "id": "natura-siberica-sl2",
+        "id": "9mice-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
-        "alt": "Natura Siberica — slide 2",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+        "src": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
+        "alt": "9mice Afterparty — slide 2",
+        "role": "Key Visuals & Poster Design",
+        "credits": "Semyon Shvetsov"
       },
       {
-        "id": "natura-siberica-sl3",
+        "id": "9mice-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/yrD1rG6XRyo6xVKyhBZmbMVTCwo.png",
-        "alt": "Natura Siberica — slide 3",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/aMydGSb6D324jTefSLaAXB1nA.png",
-        "alt": "Natura Siberica — slide 4",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl5",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/0eHgoaBK9IBeo5WLMNGnkzhJfY.png",
-        "alt": "Natura Siberica — slide 5",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl6",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/p2TGOqDa7NYN77EyvaRUA7CeXs.png",
-        "alt": "Natura Siberica — slide 6",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl7",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/yQD9Su6pXA04PsBLy5DjGhyYCc.png",
-        "alt": "Natura Siberica — slide 7",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl8",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/yAVb2QZ0GD6U5SoMXvyLZLd49g.png",
-        "alt": "Natura Siberica — slide 8",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl9",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/6tVtjWLxfFeDSevjoVS2Yy6YfKU.png",
-        "alt": "Natura Siberica — slide 9",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl10",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/2cTEMneK93dWWPLzidzPapNo.png",
-        "alt": "Natura Siberica — slide 10",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl11",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/t1ROS4OXZzNiKxKhAjWeQtbGgM.png",
-        "alt": "Natura Siberica — slide 11",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
-      },
-      {
-        "id": "natura-siberica-sl12",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/tkmNjnIJe6KUQhWOSP4R6DOGrkw.png",
-        "alt": "Natura Siberica — slide 12",
-        "role": "Packaging Concept, Visualization & Prepress",
-        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+        "src": "https://framerusercontent.com/images/1ozrI3Faqm8113RFdpQUcLZQI.jpg",
+        "alt": "9mice Afterparty — slide 3",
+        "role": "Key Visuals & Poster Design",
+        "credits": "Semyon Shvetsov"
       }
     ]
   },
@@ -348,14 +244,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/45WC9r0hm766ow49omjBlquIQ.jpg",
         "alt": "Demix × Outlaw — visual 2",
         "position": 2
-      },
-      {
-        "id": "demix-x-aytlo-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/WzGKVYV0Bls6nOeUc51TgNZGrqM.png",
-        "fullSrc": "https://framerusercontent.com/images/WzGKVYV0Bls6nOeUc51TgNZGrqM.png",
-        "alt": "Demix × Outlaw — visual 3",
-        "position": 3
       }
     ],
     "slides": [
@@ -409,22 +297,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/w2StFmS9WLrVrUMOlJXmpsjguE.png",
         "alt": "VOID — visual 2",
         "position": 2
-      },
-      {
-        "id": "void-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/tuTAjKuddCY7xgM63oGAPrHWsbk.png",
-        "fullSrc": "https://framerusercontent.com/images/tuTAjKuddCY7xgM63oGAPrHWsbk.png",
-        "alt": "VOID — visual 3",
-        "position": 3
-      },
-      {
-        "id": "void-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/tQWp8diYbH664U0ZZ5uSe52NY.png",
-        "fullSrc": "https://framerusercontent.com/images/tQWp8diYbH664U0ZZ5uSe52NY.png",
-        "alt": "VOID — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -529,67 +401,6 @@ export const PROJECTS: Project[] = [
   {
     "id": "client-5",
     "roman": "V",
-    "slug": "9mice",
-    "client": "9mice Afterparty",
-    "year": "2024",
-    "category": "Art Direction & Key Visual",
-    "description": "9mice (born Sergey Igorevich Dmitriev on August 27, 2000) is a Russian experimental hip-hop artist, producer, and creative director. Together with fellow musician Kai Angel, he forms the influential creative duo and aesthetic movement VIPERR , which reshaped the Russian-speaking underground and alternative rap scene in the mid-2020s.",
-    "slots": [
-      {
-        "id": "9mice-s1",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
-        "fullSrc": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
-        "alt": "9mice Afterparty — visual 1",
-        "position": 1
-      },
-      {
-        "id": "9mice-s2",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
-        "fullSrc": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
-        "alt": "9mice Afterparty — visual 2",
-        "position": 2
-      },
-      {
-        "id": "9mice-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1ozrI3Faqm8113RFdpQUcLZQI.jpg",
-        "fullSrc": "https://framerusercontent.com/images/1ozrI3Faqm8113RFdpQUcLZQI.jpg",
-        "alt": "9mice Afterparty — visual 3",
-        "position": 3
-      }
-    ],
-    "slides": [
-      {
-        "id": "9mice-sl1",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
-        "alt": "9mice Afterparty — slide 1",
-        "role": "Key Visuals & Poster Design",
-        "credits": "Semyon Shvetsov"
-      },
-      {
-        "id": "9mice-sl2",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
-        "alt": "9mice Afterparty — slide 2",
-        "role": "Key Visuals & Poster Design",
-        "credits": "Semyon Shvetsov"
-      },
-      {
-        "id": "9mice-sl3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1ozrI3Faqm8113RFdpQUcLZQI.jpg",
-        "alt": "9mice Afterparty — slide 3",
-        "role": "Key Visuals & Poster Design",
-        "credits": "Semyon Shvetsov"
-      }
-    ]
-  },
-  {
-    "id": "client-6",
-    "roman": "VI",
     "slug": "aperol",
     "client": "Aperol",
     "year": "2024",
@@ -611,22 +422,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/ffBoaFBGUgESplWykvwdUYdIoW4.png",
         "alt": "Aperol — visual 2",
         "position": 2
-      },
-      {
-        "id": "aperol-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/A291h6Lrq6FsYpSiKGFnJguvSg.png",
-        "fullSrc": "https://framerusercontent.com/images/A291h6Lrq6FsYpSiKGFnJguvSg.png",
-        "alt": "Aperol — visual 3",
-        "position": 3
-      },
-      {
-        "id": "aperol-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/2CJ1G7ktXw8LjwCIIDvBmFsNvI.png",
-        "fullSrc": "https://framerusercontent.com/images/2CJ1G7ktXw8LjwCIIDvBmFsNvI.png",
-        "alt": "Aperol — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -689,6 +484,131 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    "id": "client-6",
+    "roman": "VI",
+    "slug": "natura-siberica",
+    "client": "Natura Siberica",
+    "year": "2024",
+    "category": "Packaging Design",
+    "description": "Implemented and unrealized projects created as part of the work on packaging in the Natura Siberica brand. In addition to developing concepts and visualizations, much attention was paid to prepress preparation, technical studies and high-quality implementation",
+    "slots": [
+      {
+        "id": "natura-siberica-s1",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
+        "fullSrc": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
+        "alt": "Natura Siberica — visual 1",
+        "position": 1
+      },
+      {
+        "id": "natura-siberica-s2",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
+        "fullSrc": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
+        "alt": "Natura Siberica — visual 2",
+        "position": 2
+      }
+    ],
+    "slides": [
+      {
+        "id": "natura-siberica-sl1",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
+        "alt": "Natura Siberica — slide 1",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl2",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
+        "alt": "Natura Siberica — slide 2",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl3",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/yrD1rG6XRyo6xVKyhBZmbMVTCwo.png",
+        "alt": "Natura Siberica — slide 3",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl4",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/aMydGSb6D324jTefSLaAXB1nA.png",
+        "alt": "Natura Siberica — slide 4",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl5",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/0eHgoaBK9IBeo5WLMNGnkzhJfY.png",
+        "alt": "Natura Siberica — slide 5",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl6",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/p2TGOqDa7NYN77EyvaRUA7CeXs.png",
+        "alt": "Natura Siberica — slide 6",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl7",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/yQD9Su6pXA04PsBLy5DjGhyYCc.png",
+        "alt": "Natura Siberica — slide 7",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl8",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/yAVb2QZ0GD6U5SoMXvyLZLd49g.png",
+        "alt": "Natura Siberica — slide 8",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl9",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/6tVtjWLxfFeDSevjoVS2Yy6YfKU.png",
+        "alt": "Natura Siberica — slide 9",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl10",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/2cTEMneK93dWWPLzidzPapNo.png",
+        "alt": "Natura Siberica — slide 10",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl11",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/t1ROS4OXZzNiKxKhAjWeQtbGgM.png",
+        "alt": "Natura Siberica — slide 11",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      },
+      {
+        "id": "natura-siberica-sl12",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/tkmNjnIJe6KUQhWOSP4R6DOGrkw.png",
+        "alt": "Natura Siberica — slide 12",
+        "role": "Packaging Concept, Visualization & Prepress",
+        "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
+      }
+    ]
+  },
+  {
     "id": "client-7",
     "roman": "VII",
     "slug": "music-typography-research-book",
@@ -712,22 +632,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/mPVfqBQOx72Wn9MoSlz685ze81w.png",
         "alt": "Music Typography — visual 2",
         "position": 2
-      },
-      {
-        "id": "music-typography-research-book-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/W8mbxtLcbdTK1VN5NoK9lxhovlI.png",
-        "fullSrc": "https://framerusercontent.com/images/W8mbxtLcbdTK1VN5NoK9lxhovlI.png",
-        "alt": "Music Typography — visual 3",
-        "position": 3
-      },
-      {
-        "id": "music-typography-research-book-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/fpObAakgSaQvWC9TSm0fZDoDE.png",
-        "fullSrc": "https://framerusercontent.com/images/fpObAakgSaQvWC9TSm0fZDoDE.png",
-        "alt": "Music Typography — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -853,22 +757,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/6V4gWyR0X2IP4mwfHQCvIDNJaao.png",
         "alt": "Glofi — visual 2",
         "position": 2
-      },
-      {
-        "id": "glofi-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/PKfVggObweFPjEuvx21aUr4IDU.png",
-        "fullSrc": "https://framerusercontent.com/images/PKfVggObweFPjEuvx21aUr4IDU.png",
-        "alt": "Glofi — visual 3",
-        "position": 3
-      },
-      {
-        "id": "glofi-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/YBcjJL3a6cUQRveZbyFUkosMFKE.png",
-        "fullSrc": "https://framerusercontent.com/images/YBcjJL3a6cUQRveZbyFUkosMFKE.png",
-        "alt": "Glofi — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -981,147 +869,6 @@ export const PROJECTS: Project[] = [
   {
     "id": "client-9",
     "roman": "IX",
-    "slug": "zavernite",
-    "client": "Zavernite",
-    "year": "2024",
-    "category": "Rebranding",
-    "description": "The rebranding of the street food café chain “Zavernite!”. As part of the project, the brand platform was updated and the visual identity of the street food café chain was redesigned. The team conducted an analysis of the market and the consumption context, clarified the target audience, their behavioral patterns and expectations, and also identified the current territory for the brand’s positioning.\n\nIn the previous version, the brand had a system in place, but some of the meanings required additional interpretation. The name “Zavernite!” It wasn’t always perceived as a direct trigger for action, which reduced the effectiveness of communication at the contact points.",
-    "slots": [
-      {
-        "id": "zavernite-s1",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
-        "fullSrc": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
-        "alt": "Zavernite — visual 1",
-        "position": 1
-      },
-      {
-        "id": "zavernite-s2",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
-        "fullSrc": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
-        "alt": "Zavernite — visual 2",
-        "position": 2
-      },
-      {
-        "id": "zavernite-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1NVD1IcspKgqbEgPTBsy3e0nLb0.jpg",
-        "fullSrc": "https://framerusercontent.com/images/1NVD1IcspKgqbEgPTBsy3e0nLb0.jpg",
-        "alt": "Zavernite — visual 3",
-        "position": 3
-      },
-      {
-        "id": "zavernite-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1QVIotrAqAhKsCAMQz4DwVrNk1Y.jpg",
-        "fullSrc": "https://framerusercontent.com/images/1QVIotrAqAhKsCAMQz4DwVrNk1Y.jpg",
-        "alt": "Zavernite — visual 4",
-        "position": 4
-      }
-    ],
-    "slides": [
-      {
-        "id": "zavernite-sl1",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
-        "alt": "Zavernite — slide 1",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl2",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
-        "alt": "Zavernite — slide 2",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1NVD1IcspKgqbEgPTBsy3e0nLb0.jpg",
-        "alt": "Zavernite — slide 3",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/1QVIotrAqAhKsCAMQz4DwVrNk1Y.jpg",
-        "alt": "Zavernite — slide 4",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl5",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/Akw87Xq4D7kgQ5lxO29Z7WUA8.jpg",
-        "alt": "Zavernite — slide 5",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl6",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/vJbNhJi3VqUentpgTkOCj1JCPzk.jpg",
-        "alt": "Zavernite — slide 6",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl7",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/LNCRNrQkHsHPRyQwYpX30CCb9U.jpg",
-        "alt": "Zavernite — slide 7",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl8",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/A7NlnnPN6eaGdQI7XKEXKxPq5c.jpg",
-        "alt": "Zavernite — slide 8",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl9",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/eFQhqsv0orS4GPlfZsyHM5fAlA.jpg",
-        "alt": "Zavernite — slide 9",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl10",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/9u9K67Q0nYZgrZOIDci0Kaw1vg0.jpg",
-        "alt": "Zavernite — slide 10",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl11",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/48qGmEVbfoLW2ijteyI8Bj4V8Sk.jpg",
-        "alt": "Zavernite — slide 11",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      },
-      {
-        "id": "zavernite-sl12",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/dOwrTiSO1G81dFScyfibbum3hzc.jpg",
-        "alt": "Zavernite — slide 12",
-        "role": "Brand Platform & Visual Identity",
-        "credits": "Street Food Café Chain Rebranding"
-      }
-    ]
-  },
-  {
-    "id": "client-10",
-    "roman": "X",
     "slug": "4",
     "client": "4 (MV)",
     "year": "2025",
@@ -1143,22 +890,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/kFime9bbPngJX9rKBb84EtEIM.png",
         "alt": "4 (MV) — visual 2",
         "position": 2
-      },
-      {
-        "id": "4-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/jGp1GUMrn4W3B4rZwM2nFyKa4tk.png",
-        "fullSrc": "https://framerusercontent.com/images/jGp1GUMrn4W3B4rZwM2nFyKa4tk.png",
-        "alt": "4 (MV) — visual 3",
-        "position": 3
-      },
-      {
-        "id": "4-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/qkHv8Y5pxZvvPlrFeoC3SYclYWE.png",
-        "fullSrc": "https://framerusercontent.com/images/qkHv8Y5pxZvvPlrFeoC3SYclYWE.png",
-        "alt": "4 (MV) — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -1269,6 +1000,131 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    "id": "client-10",
+    "roman": "X",
+    "slug": "zavernite",
+    "client": "Zavernite",
+    "year": "2024",
+    "category": "Rebranding",
+    "description": "The rebranding of the street food café chain “Zavernite!”. As part of the project, the brand platform was updated and the visual identity of the street food café chain was redesigned. The team conducted an analysis of the market and the consumption context, clarified the target audience, their behavioral patterns and expectations, and also identified the current territory for the brand’s positioning.\n\nIn the previous version, the brand had a system in place, but some of the meanings required additional interpretation. The name “Zavernite!” It wasn’t always perceived as a direct trigger for action, which reduced the effectiveness of communication at the contact points.",
+    "slots": [
+      {
+        "id": "zavernite-s1",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
+        "fullSrc": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
+        "alt": "Zavernite — visual 1",
+        "position": 1
+      },
+      {
+        "id": "zavernite-s2",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
+        "fullSrc": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
+        "alt": "Zavernite — visual 2",
+        "position": 2
+      }
+    ],
+    "slides": [
+      {
+        "id": "zavernite-sl1",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
+        "alt": "Zavernite — slide 1",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl2",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
+        "alt": "Zavernite — slide 2",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl3",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/1NVD1IcspKgqbEgPTBsy3e0nLb0.jpg",
+        "alt": "Zavernite — slide 3",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl4",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/1QVIotrAqAhKsCAMQz4DwVrNk1Y.jpg",
+        "alt": "Zavernite — slide 4",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl5",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/Akw87Xq4D7kgQ5lxO29Z7WUA8.jpg",
+        "alt": "Zavernite — slide 5",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl6",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/vJbNhJi3VqUentpgTkOCj1JCPzk.jpg",
+        "alt": "Zavernite — slide 6",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl7",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/LNCRNrQkHsHPRyQwYpX30CCb9U.jpg",
+        "alt": "Zavernite — slide 7",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl8",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/A7NlnnPN6eaGdQI7XKEXKxPq5c.jpg",
+        "alt": "Zavernite — slide 8",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl9",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/eFQhqsv0orS4GPlfZsyHM5fAlA.jpg",
+        "alt": "Zavernite — slide 9",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl10",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/9u9K67Q0nYZgrZOIDci0Kaw1vg0.jpg",
+        "alt": "Zavernite — slide 10",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl11",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/48qGmEVbfoLW2ijteyI8Bj4V8Sk.jpg",
+        "alt": "Zavernite — slide 11",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      },
+      {
+        "id": "zavernite-sl12",
+        "kind": "image",
+        "src": "https://framerusercontent.com/images/dOwrTiSO1G81dFScyfibbum3hzc.jpg",
+        "alt": "Zavernite — slide 12",
+        "role": "Brand Platform & Visual Identity",
+        "credits": "Street Food Café Chain Rebranding"
+      }
+    ]
+  },
+  {
     "id": "client-11",
     "roman": "XI",
     "slug": "modular",
@@ -1292,22 +1148,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/QvwuGfauW6TkwaWQELPVbaQgL4.jpg",
         "alt": "Modular — visual 2",
         "position": 2
-      },
-      {
-        "id": "modular-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/XthAdjM0UCrQBG00OwoEHH7ro8.jpg",
-        "fullSrc": "https://framerusercontent.com/images/XthAdjM0UCrQBG00OwoEHH7ro8.jpg",
-        "alt": "Modular — visual 3",
-        "position": 3
-      },
-      {
-        "id": "modular-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/X37yBIGGIAc5aLvndNozvVJ5k.jpg",
-        "fullSrc": "https://framerusercontent.com/images/X37yBIGGIAc5aLvndNozvVJ5k.jpg",
-        "alt": "Modular — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -1393,22 +1233,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/NOWdh92mM9cqzf2YfamqFFSzYjw.jpg",
         "alt": "NN Creative — visual 2",
         "position": 2
-      },
-      {
-        "id": "nn-creative-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/dAQmXwASffCASmiL87gB1328Jco.jpg",
-        "fullSrc": "https://framerusercontent.com/images/dAQmXwASffCASmiL87gB1328Jco.jpg",
-        "alt": "NN Creative — visual 3",
-        "position": 3
-      },
-      {
-        "id": "nn-creative-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/myf0YlJiyb80baqWa46yu57BRSw.jpg",
-        "fullSrc": "https://framerusercontent.com/images/myf0YlJiyb80baqWa46yu57BRSw.jpg",
-        "alt": "NN Creative — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -1486,22 +1310,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/rOaBVqpAhWDvUbCTUblKLrHHf8.jpg",
         "alt": "Bariers — visual 2",
         "position": 2
-      },
-      {
-        "id": "bariers-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/D887oOYNyalnws0ydAVumVVJlk.jpg",
-        "fullSrc": "https://framerusercontent.com/images/D887oOYNyalnws0ydAVumVVJlk.jpg",
-        "alt": "Bariers — visual 3",
-        "position": 3
-      },
-      {
-        "id": "bariers-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/dpAs0coSna6HWJ8xKb9bAL22M.jpg",
-        "fullSrc": "https://framerusercontent.com/images/dpAs0coSna6HWJ8xKb9bAL22M.jpg",
-        "alt": "Bariers — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -1571,22 +1379,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/StAg5sufhBSJL8MYaqPBIgPMUEg.png",
         "alt": "Posters & Flyers — visual 2",
         "position": 2
-      },
-      {
-        "id": "posters-flyers-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/3dEvn93cBSaz4Rao7Fzwms2S6jg.png",
-        "fullSrc": "https://framerusercontent.com/images/3dEvn93cBSaz4Rao7Fzwms2S6jg.png",
-        "alt": "Posters & Flyers — visual 3",
-        "position": 3
-      },
-      {
-        "id": "posters-flyers-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/dc6mruojODN3Z5ApFhvrlJkWI.png",
-        "fullSrc": "https://framerusercontent.com/images/dc6mruojODN3Z5ApFhvrlJkWI.png",
-        "alt": "Posters & Flyers — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -1672,22 +1464,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/J06APDgdjnwu4KDZsCnSOjQrm0.png",
         "alt": "Music Covers — visual 2",
         "position": 2
-      },
-      {
-        "id": "music-covers-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/pgHrSKPhzmLF5HeaEemCBAt4m0.png",
-        "fullSrc": "https://framerusercontent.com/images/pgHrSKPhzmLF5HeaEemCBAt4m0.png",
-        "alt": "Music Covers — visual 3",
-        "position": 3
-      },
-      {
-        "id": "music-covers-s4",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/gnjnjJb8Av6SO8JKZZ0j3KZVsqw.png",
-        "fullSrc": "https://framerusercontent.com/images/gnjnjJb8Av6SO8JKZZ0j3KZVsqw.png",
-        "alt": "Music Covers — visual 4",
-        "position": 4
       }
     ],
     "slides": [
@@ -1757,14 +1533,6 @@ export const PROJECTS: Project[] = [
         "fullSrc": "https://framerusercontent.com/images/EpNrAApimTMOk31vDF57ThCKCo.jpg",
         "alt": "plgthg — na svalke — visual 2",
         "position": 2
-      },
-      {
-        "id": "plgthg-na-svalke-s3",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/s0Y6CDWGGGo9mvILyfn1LoAVuo.jpg",
-        "fullSrc": "https://framerusercontent.com/images/s0Y6CDWGGGo9mvILyfn1LoAVuo.jpg",
-        "alt": "plgthg — na svalke — visual 3",
-        "position": 3
       }
     ],
     "slides": [

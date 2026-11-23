@@ -23,14 +23,14 @@ export function HeaderMobile() {
   return (
     <>
       <header className="header-mobile">
-        <Link to="/">{SITE.name}</Link>
+        <Link to="/">[{SITE.name}]</Link>
         <button
           type="button"
           aria-expanded={open}
           aria-controls="mobile-nav-drawer"
           onClick={() => setOpen(true)}
         >
-          MENU
+          [MENU]
         </button>
       </header>
 
@@ -41,15 +41,15 @@ export function HeaderMobile() {
       >
         <div className="mobile-drawer__top">
           <Link to="/" onClick={() => setOpen(false)}>
-            {SITE.name}
+            [{SITE.name}]
           </Link>
           <button type="button" onClick={() => setOpen(false)}>
-            CLOSE
+            [CLOSE]
           </button>
         </div>
 
         <section className="mobile-drawer__section">
-          <p className="mobile-drawer__label">INFO</p>
+          <p className="mobile-drawer__label">[INFO]</p>
           <p>
             {SITE.bioLines.map((line, i) => (
               <span key={line}>
@@ -61,7 +61,7 @@ export function HeaderMobile() {
         </section>
 
         <section className="mobile-drawer__section">
-          <p className="mobile-drawer__label">CLIENTS</p>
+          <p className="mobile-drawer__label">[CLIENTS]</p>
           <ul className="mobile-drawer__clients">
             {PROJECTS.map((project) => (
               <li key={project.id}>
@@ -78,7 +78,7 @@ export function HeaderMobile() {
         </section>
 
         <section className="mobile-drawer__section">
-          <p className="mobile-drawer__label">CONTACTS</p>
+          <p className="mobile-drawer__label">[CONTACTS]</p>
           <ul>
             <li>
               <a href={`mailto:${SITE.email}`}>{SITE.email}</a>

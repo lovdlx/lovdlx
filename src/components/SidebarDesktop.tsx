@@ -40,7 +40,7 @@ export function SidebarDesktop({
             className="sidebar-col__heading"
             onClick={handleHeadingClick}
           >
-            INFO
+            [INFO]
           </button>
           <ul className="sidebar-sub">
             <li>
@@ -63,7 +63,7 @@ export function SidebarDesktop({
             className="sidebar-col__heading"
             onClick={handleHeadingClick}
           >
-            CLIENTS
+            [CLIENTS]
           </button>
           <ul className="sidebar-sub">
             {PROJECTS.map((project) => {
@@ -95,7 +95,7 @@ export function SidebarDesktop({
             className="sidebar-col__heading"
             onClick={handleHeadingClick}
           >
-            CONTACTS
+            [CONTACTS]
           </button>
           <ul className="sidebar-sub">
             <li>
@@ -153,7 +153,7 @@ export function SidebarDesktop({
             onMouseLeave={() => setTitleHovered(false)}
           >
             <h1>
-              <span className="sidebar-title-stretch">{SITE.name}</span>
+              <span className="sidebar-title-stretch">[{SITE.name}]</span>
             </h1>
           </Link>
         </div>
