@@ -321,6 +321,51 @@ const RAW_PROJECTS: Project[] = [
   {
     "id": "client-5",
     "roman": "V",
+    "slug": "clothing-design-printmaking",
+    "client": "Clothing Design / Printmaking",
+    "year": "2025",
+    "category": "Clothing Design & Printmaking",
+    "description": "Selected graphic apparel and screen-printed merch developed for independent brands and musicians.\n\n01 — CRYON \"Audio Tee\"\nPrint: Screen printing, matte white ink\nFabric: 100% Cotton, 210 g/m²\n\n02 — Mehanizm Merch\nPrint: Screen printing, matte white ink\nFabric: 100% Cotton, 210 g/m²",
+    "slots": [
+      {
+        "id": "clothing-s1",
+        "kind": "image",
+        "src": "media/thumb/clothing_cryon_audio.webp",
+        "fullSrc": "media/full/clothing_cryon_audio.webp",
+        "alt": "CRYON Audio Tee — screen-printed cotton T-shirt",
+        "position": 1
+      },
+      {
+        "id": "clothing-s2",
+        "kind": "image",
+        "src": "media/thumb/clothing_mehanizm.webp",
+        "fullSrc": "media/full/clothing_mehanizm.webp",
+        "alt": "Mehanizm Merch — screen-printed cotton T-shirt",
+        "position": 2
+      }
+    ],
+    "slides": [
+      {
+        "id": "clothing-sl1",
+        "kind": "image",
+        "src": "media/full/clothing_cryon_audio.webp",
+        "alt": "CRYON Audio Tee — screen-printed cotton T-shirt",
+        "role": "CRYON \"Audio Tee\" · Matte white screen print · 100% Cotton, 210 g/m²",
+        "credits": "Semyon Shvetsov · CRYON"
+      },
+      {
+        "id": "clothing-sl2",
+        "kind": "image",
+        "src": "media/full/clothing_mehanizm.webp",
+        "alt": "Mehanizm Merch — screen-printed cotton T-shirt",
+        "role": "Mehanizm Merch · Matte white screen print · 100% Cotton, 210 g/m²",
+        "credits": "Semyon Shvetsov · Mehanizm"
+      }
+    ]
+  },
+  {
+    "id": "client-6",
+    "roman": "VI",
     "slug": "demix-x-aytlo",
     "client": "Demix × Outlaw",
     "year": "2025",
@@ -372,8 +417,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-6",
-    "roman": "VI",
+    "id": "client-7",
+    "roman": "VII",
     "slug": "void",
     "client": "VOID",
     "year": "2024",
@@ -497,8 +542,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-7",
-    "roman": "VII",
+    "id": "client-8",
+    "roman": "VIII",
     "slug": "aperol",
     "client": "Aperol",
     "year": "2024",
@@ -582,8 +627,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-8",
-    "roman": "VIII",
+    "id": "client-9",
+    "roman": "IX",
     "slug": "natura-siberica",
     "client": "Natura Siberica",
     "year": "2024",
@@ -707,8 +752,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-9",
-    "roman": "IX",
+    "id": "client-10",
+    "roman": "X",
     "slug": "music-typography-research-book",
     "client": "Music Typography",
     "year": "2024",
@@ -832,8 +877,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-10",
-    "roman": "X",
+    "id": "client-11",
+    "roman": "XI",
     "slug": "glofi",
     "client": "Glofi",
     "year": "2024",
@@ -967,8 +1012,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-11",
-    "roman": "XI",
+    "id": "client-12",
+    "roman": "XII",
     "slug": "4",
     "client": "4 (MV)",
     "year": "2025",
@@ -1102,8 +1147,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-12",
-    "roman": "XII",
+    "id": "client-13",
+    "roman": "XIII",
     "slug": "zavernite",
     "client": "Zavernite",
     "year": "2024",
@@ -1227,8 +1272,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-13",
-    "roman": "XIII",
+    "id": "client-14",
+    "roman": "XIV",
     "slug": "modular",
     "client": "Modular",
     "year": "2024",
@@ -1312,8 +1357,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-14",
-    "roman": "XIV",
+    "id": "client-15",
+    "roman": "XV",
     "slug": "nn-creative",
     "client": "NN Creative",
     "year": "2024",
@@ -1389,8 +1434,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-15",
-    "roman": "XV",
+    "id": "client-16",
+    "roman": "XVI",
     "slug": "bariers",
     "client": "Bariers",
     "year": "2024",
@@ -1458,8 +1503,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-16",
-    "roman": "XVI",
+    "id": "client-17",
+    "roman": "XVII",
     "slug": "posters-flyers",
     "client": "Posters & Flyers",
     "year": "2024",
@@ -1551,8 +1596,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-17",
-    "roman": "XVII",
+    "id": "client-18",
+    "roman": "XVIII",
     "slug": "music-covers",
     "client": "Music Covers",
     "year": "2024",
@@ -1620,8 +1665,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-18",
-    "roman": "XVIII",
+    "id": "client-19",
+    "roman": "XIX",
     "slug": "plgthg-na-svalke",
     "client": "plgthg — na svalke",
     "year": "2024",
@@ -1673,8 +1718,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-19",
-    "roman": "XIX",
+    "id": "client-20",
+    "roman": "XX",
     "slug": "metasystem-promo",
     "client": "Metasystem Promo",
     "year": "2024",
