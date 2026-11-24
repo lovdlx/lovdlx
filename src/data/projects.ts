@@ -5,6 +5,7 @@ export interface ProjectSlot {
   kind: MediaKind;
   src: string;
   fullSrc?: string;
+  poster?: string;
   alt: string;
   orientation?: 'vertical' | 'horizontal';
   /** Slot position in the desktop cluster: 1=top, 2=bottom */
@@ -15,6 +16,7 @@ export interface ProjectSlide {
   id: string;
   kind: MediaKind;
   src: string;
+  poster?: string;
   alt: string;
   orientation?: 'vertical' | 'horizontal' | 'square';
   role?: string;
@@ -49,16 +51,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "echotypes-s1",
         "kind": "image",
-        "src": "media/echotypes/01.jpg",
-        "fullSrc": "media/echotypes/01.jpg",
+        "src": "media/thumb/echotypes_01.webp",
+        "fullSrc": "media/full/echotypes_01.webp",
         "alt": "Echotypes Live — key visual 01",
         "position": 1
       },
       {
         "id": "echotypes-s2",
         "kind": "image",
-        "src": "media/echotypes/04.jpg",
-        "fullSrc": "media/echotypes/04.jpg",
+        "src": "media/thumb/echotypes_04.webp",
+        "fullSrc": "media/full/echotypes_04.webp",
         "alt": "Echotypes Live — key visual 02",
         "position": 2
       }
@@ -67,7 +69,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "echotypes-sl1",
         "kind": "image",
-        "src": "media/echotypes/01.jpg",
+        "src": "media/full/echotypes_01.webp",
         "alt": "Echotypes Live — key visual 01",
         "role": "Art Direction, Key Visuals & Brand Positioning",
         "credits": "Semyon Shvetsov · fābula HQ, Moscow"
@@ -75,7 +77,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "echotypes-sl2",
         "kind": "image",
-        "src": "media/echotypes/04.jpg",
+        "src": "media/full/echotypes_04.webp",
         "alt": "Echotypes Live — red/white key visual",
         "role": "Key Visual & Communication System",
         "credits": "Semyon Shvetsov · fābula HQ, Moscow"
@@ -83,7 +85,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "echotypes-sl3",
         "kind": "image",
-        "src": "media/echotypes/03.jpg",
+        "src": "media/full/echotypes_03.webp",
         "alt": "Echotypes — lineup poster",
         "role": "Art Direction & Poster Design",
         "credits": "Semyon Shvetsov · fābula HQ, Moscow"
@@ -91,7 +93,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "echotypes-sl4",
         "kind": "image",
-        "src": "media/echotypes/02.jpg",
+        "src": "media/full/echotypes_02.webp",
         "alt": "Volume01 — lineup poster",
         "role": "Brand Positioning & Visual Communications",
         "credits": "Semyon Shvetsov · fābula HQ, Moscow"
@@ -110,16 +112,17 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-s1",
         "kind": "video",
-        "src": "https://framerusercontent.com/assets/rMWSRXLRvjh5FSRBAEd1rezfbDE.mp4",
-        "fullSrc": "https://framerusercontent.com/images/V1TS935v2yI2tXch4Axefm6Sc.png",
+        "src": "media/video/rMWSRXLRvjh5FSRBAEd1rezfbDE.mp4",
+        "fullSrc": "media/full/V1TS935v2yI2tXch4Axefm6Sc.webp",
         "alt": "Kintsugi Jewelry — visual 1",
-        "position": 1
+        "position": 1,
+        "poster": "media/poster/rMWSRXLRvjh5FSRBAEd1rezfbDE.webp"
       },
       {
         "id": "kintsugi-jewelry-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/V1TS935v2yI2tXch4Axefm6Sc.png",
-        "fullSrc": "https://framerusercontent.com/images/V1TS935v2yI2tXch4Axefm6Sc.png",
+        "src": "media/thumb/V1TS935v2yI2tXch4Axefm6Sc.webp",
+        "fullSrc": "media/full/V1TS935v2yI2tXch4Axefm6Sc.webp",
         "alt": "Kintsugi Jewelry — visual 2",
         "position": 2
       }
@@ -128,15 +131,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl1",
         "kind": "video",
-        "src": "https://framerusercontent.com/assets/rMWSRXLRvjh5FSRBAEd1rezfbDE.mp4",
+        "src": "media/video/rMWSRXLRvjh5FSRBAEd1rezfbDE.mp4",
         "alt": "Kintsugi Jewelry — slide 1",
         "role": "Brand Platform, Visual Identity & Art Direction",
-        "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
+        "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal",
+        "poster": "media/poster/rMWSRXLRvjh5FSRBAEd1rezfbDE.webp"
       },
       {
         "id": "kintsugi-jewelry-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/V1TS935v2yI2tXch4Axefm6Sc.png",
+        "src": "media/full/V1TS935v2yI2tXch4Axefm6Sc.webp",
         "alt": "Kintsugi Jewelry — slide 2",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -144,7 +148,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/1v1LjK59Yc25kqk67g2ZAbUmao.png",
+        "src": "media/full/1v1LjK59Yc25kqk67g2ZAbUmao.webp",
         "alt": "Kintsugi Jewelry — slide 3",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -152,7 +156,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/lv3F7PYT1uEU9kLIHxPUj4yqo.png",
+        "src": "media/full/lv3F7PYT1uEU9kLIHxPUj4yqo.webp",
         "alt": "Kintsugi Jewelry — slide 4",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -160,23 +164,24 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/715GbvvlEUFjqKc7x6A3dW9yidw.jpg",
+        "src": "media/full/715GbvvlEUFjqKc7x6A3dW9yidw.webp",
         "alt": "Kintsugi Jewelry — slide 5",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
       },
       {
         "id": "kintsugi-jewelry-sl6",
-        "kind": "image",
-        "src": "https://framerusercontent.com/images/AK8xdTs3Xz9f7OinK7z7o5sQl2I.gif",
+        "kind": "video",
+        "src": "media/video/AK8xdTs3Xz9f7OinK7z7o5sQl2I.mp4",
         "alt": "Kintsugi Jewelry — slide 6",
         "role": "Brand Platform, Visual Identity & Art Direction",
-        "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
+        "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal",
+        "poster": "media/poster/AK8xdTs3Xz9f7OinK7z7o5sQl2I.webp"
       },
       {
         "id": "kintsugi-jewelry-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/27mg5HrvVr4HT6KibdnTe1MWI.png",
+        "src": "media/full/27mg5HrvVr4HT6KibdnTe1MWI.webp",
         "alt": "Kintsugi Jewelry — slide 7",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -184,7 +189,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl8",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/aPTst4bY9OR2YDN29IHbe8Ds0E.png",
+        "src": "media/full/aPTst4bY9OR2YDN29IHbe8Ds0E.webp",
         "alt": "Kintsugi Jewelry — slide 8",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -192,7 +197,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl9",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/E9w4SO5Fm5kVTgedJq4Ikr1qA.png",
+        "src": "media/full/E9w4SO5Fm5kVTgedJq4Ikr1qA.webp",
         "alt": "Kintsugi Jewelry — slide 9",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -200,7 +205,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl10",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/8013weofebp31keHtcwunT7DU.png",
+        "src": "media/full/8013weofebp31keHtcwunT7DU.webp",
         "alt": "Kintsugi Jewelry — slide 10",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -208,7 +213,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl11",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/B1xZchfsZ4mP0bEBtjRDedrD5I.png",
+        "src": "media/full/B1xZchfsZ4mP0bEBtjRDedrD5I.webp",
         "alt": "Kintsugi Jewelry — slide 11",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -216,7 +221,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl12",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/glB9t0heK4SszLtUyvjvmWNRmwI.png",
+        "src": "media/full/glB9t0heK4SszLtUyvjvmWNRmwI.webp",
         "alt": "Kintsugi Jewelry — slide 12",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -224,7 +229,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "kintsugi-jewelry-sl13",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/RdUQgStpdPeylyyfDKP4Famwg5Y.png",
+        "src": "media/full/RdUQgStpdPeylyyfDKP4Famwg5Y.webp",
         "alt": "Kintsugi Jewelry — slide 13",
         "role": "Brand Platform, Visual Identity & Art Direction",
         "credits": "Art Direction & Design: Semyon Shvetsov · Lisbon, Portugal"
@@ -243,16 +248,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "9mice-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
-        "fullSrc": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
+        "src": "media/thumb/gkDwCbagAyyuiYKPZow2Io8D5Q.webp",
+        "fullSrc": "media/full/gkDwCbagAyyuiYKPZow2Io8D5Q.webp",
         "alt": "9mice Afterparty — visual 1",
         "position": 1
       },
       {
         "id": "9mice-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
-        "fullSrc": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
+        "src": "media/thumb/3IDnaDhZE6D7WGOqRoB0uRoNSoU.webp",
+        "fullSrc": "media/full/3IDnaDhZE6D7WGOqRoB0uRoNSoU.webp",
         "alt": "9mice Afterparty — visual 2",
         "position": 2
       }
@@ -261,7 +266,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "9mice-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
+        "src": "media/full/gkDwCbagAyyuiYKPZow2Io8D5Q.webp",
         "alt": "9mice Afterparty — slide 1",
         "role": "Key Visuals & Poster Design",
         "credits": "Semyon Shvetsov"
@@ -269,7 +274,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "9mice-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
+        "src": "media/full/3IDnaDhZE6D7WGOqRoB0uRoNSoU.webp",
         "alt": "9mice Afterparty — slide 2",
         "role": "Key Visuals & Poster Design",
         "credits": "Semyon Shvetsov"
@@ -277,7 +282,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "9mice-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/1ozrI3Faqm8113RFdpQUcLZQI.jpg",
+        "src": "media/full/1ozrI3Faqm8113RFdpQUcLZQI.webp",
         "alt": "9mice Afterparty — slide 3",
         "role": "Key Visuals & Poster Design",
         "credits": "Semyon Shvetsov"
@@ -296,16 +301,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "demix-x-aytlo-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/PLK27lk25nedMzuFopexRzf2bNE.png",
-        "fullSrc": "https://framerusercontent.com/images/PLK27lk25nedMzuFopexRzf2bNE.png",
+        "src": "media/thumb/PLK27lk25nedMzuFopexRzf2bNE.webp",
+        "fullSrc": "media/full/PLK27lk25nedMzuFopexRzf2bNE.webp",
         "alt": "Demix × Outlaw — visual 1",
         "position": 1
       },
       {
         "id": "demix-x-aytlo-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/45WC9r0hm766ow49omjBlquIQ.jpg",
-        "fullSrc": "https://framerusercontent.com/images/45WC9r0hm766ow49omjBlquIQ.jpg",
+        "src": "media/thumb/45WC9r0hm766ow49omjBlquIQ.webp",
+        "fullSrc": "media/full/45WC9r0hm766ow49omjBlquIQ.webp",
         "alt": "Demix × Outlaw — visual 2",
         "position": 2
       }
@@ -314,7 +319,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "demix-x-aytlo-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/PLK27lk25nedMzuFopexRzf2bNE.png",
+        "src": "media/full/PLK27lk25nedMzuFopexRzf2bNE.webp",
         "alt": "Demix × Outlaw — slide 1",
         "role": "Visual Communication & Key Visuals",
         "credits": "Semyon Shvetsov"
@@ -322,7 +327,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "demix-x-aytlo-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/45WC9r0hm766ow49omjBlquIQ.jpg",
+        "src": "media/full/45WC9r0hm766ow49omjBlquIQ.webp",
         "alt": "Demix × Outlaw — slide 2",
         "role": "Visual Communication & Key Visuals",
         "credits": "Semyon Shvetsov"
@@ -330,7 +335,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "demix-x-aytlo-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/WzGKVYV0Bls6nOeUc51TgNZGrqM.png",
+        "src": "media/full/WzGKVYV0Bls6nOeUc51TgNZGrqM.webp",
         "alt": "Demix × Outlaw — slide 3",
         "role": "Visual Communication & Key Visuals",
         "credits": "Semyon Shvetsov"
@@ -349,16 +354,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/SRxK8L7M7FoScWNF8xXROykZc.png",
-        "fullSrc": "https://framerusercontent.com/images/SRxK8L7M7FoScWNF8xXROykZc.png",
+        "src": "media/thumb/SRxK8L7M7FoScWNF8xXROykZc.webp",
+        "fullSrc": "media/full/SRxK8L7M7FoScWNF8xXROykZc.webp",
         "alt": "VOID — visual 1",
         "position": 1
       },
       {
         "id": "void-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/w2StFmS9WLrVrUMOlJXmpsjguE.png",
-        "fullSrc": "https://framerusercontent.com/images/w2StFmS9WLrVrUMOlJXmpsjguE.png",
+        "src": "media/thumb/w2StFmS9WLrVrUMOlJXmpsjguE.webp",
+        "fullSrc": "media/full/w2StFmS9WLrVrUMOlJXmpsjguE.webp",
         "alt": "VOID — visual 2",
         "position": 2
       }
@@ -367,7 +372,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/SRxK8L7M7FoScWNF8xXROykZc.png",
+        "src": "media/full/SRxK8L7M7FoScWNF8xXROykZc.webp",
         "alt": "VOID — slide 1",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -375,7 +380,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/w2StFmS9WLrVrUMOlJXmpsjguE.png",
+        "src": "media/full/w2StFmS9WLrVrUMOlJXmpsjguE.webp",
         "alt": "VOID — slide 2",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -383,7 +388,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/tuTAjKuddCY7xgM63oGAPrHWsbk.png",
+        "src": "media/full/tuTAjKuddCY7xgM63oGAPrHWsbk.webp",
         "alt": "VOID — slide 3",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -391,7 +396,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/tQWp8diYbH664U0ZZ5uSe52NY.png",
+        "src": "media/full/tQWp8diYbH664U0ZZ5uSe52NY.webp",
         "alt": "VOID — slide 4",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -399,7 +404,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/mdKULDkzFvkiqIzln1BHtoNHhh4.png",
+        "src": "media/full/mdKULDkzFvkiqIzln1BHtoNHhh4.webp",
         "alt": "VOID — slide 5",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -407,7 +412,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/M6eILbTXt0xutkH96yxR3InjH3w.png",
+        "src": "media/full/M6eILbTXt0xutkH96yxR3InjH3w.webp",
         "alt": "VOID — slide 6",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -415,7 +420,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/ddCSe0TA0UvuDBhJCkN4zswuxo.png",
+        "src": "media/full/ddCSe0TA0UvuDBhJCkN4zswuxo.webp",
         "alt": "VOID — slide 7",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -423,7 +428,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl8",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/5r5sPkywhxb7Sco5RoOlbcUgU.png",
+        "src": "media/full/5r5sPkywhxb7Sco5RoOlbcUgU.webp",
         "alt": "VOID — slide 8",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -431,7 +436,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl9",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/VsNT5tMxkQR79iJdSXSU9dz9tsQ.png",
+        "src": "media/full/VsNT5tMxkQR79iJdSXSU9dz9tsQ.webp",
         "alt": "VOID — slide 9",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -439,7 +444,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl10",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/WNnYtQAoRFpfXjHSDqVsHZ2Aqc.png",
+        "src": "media/full/WNnYtQAoRFpfXjHSDqVsHZ2Aqc.webp",
         "alt": "VOID — slide 10",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -447,7 +452,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl11",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/OQdVim2tJ7udwc5zqlb9sCXs6c.png",
+        "src": "media/full/OQdVim2tJ7udwc5zqlb9sCXs6c.webp",
         "alt": "VOID — slide 11",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -455,7 +460,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "void-sl12",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/sELOJXA3mMuknZ6ahsXIs9awag.png",
+        "src": "media/full/sELOJXA3mMuknZ6ahsXIs9awag.webp",
         "alt": "VOID — slide 12",
         "role": "Brand Platform, Visual Identity & Production",
         "credits": "Music Festival · Moscow"
@@ -474,16 +479,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "aperol-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/fri1n27wQOuJB7NDw5rIiA9dIE.png",
-        "fullSrc": "https://framerusercontent.com/images/fri1n27wQOuJB7NDw5rIiA9dIE.png",
+        "src": "media/thumb/fri1n27wQOuJB7NDw5rIiA9dIE.webp",
+        "fullSrc": "media/full/fri1n27wQOuJB7NDw5rIiA9dIE.webp",
         "alt": "Aperol — visual 1",
         "position": 1
       },
       {
         "id": "aperol-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/ffBoaFBGUgESplWykvwdUYdIoW4.png",
-        "fullSrc": "https://framerusercontent.com/images/ffBoaFBGUgESplWykvwdUYdIoW4.png",
+        "src": "media/thumb/ffBoaFBGUgESplWykvwdUYdIoW4.webp",
+        "fullSrc": "media/full/ffBoaFBGUgESplWykvwdUYdIoW4.webp",
         "alt": "Aperol — visual 2",
         "position": 2
       }
@@ -492,7 +497,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "aperol-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/fri1n27wQOuJB7NDw5rIiA9dIE.png",
+        "src": "media/full/fri1n27wQOuJB7NDw5rIiA9dIE.webp",
         "alt": "Aperol — slide 1",
         "role": "Brand Activation & Environmental Design",
         "credits": "PR Activations & Objects"
@@ -500,7 +505,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "aperol-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/ffBoaFBGUgESplWykvwdUYdIoW4.png",
+        "src": "media/full/ffBoaFBGUgESplWykvwdUYdIoW4.webp",
         "alt": "Aperol — slide 2",
         "role": "Brand Activation & Environmental Design",
         "credits": "PR Activations & Objects"
@@ -508,7 +513,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "aperol-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/A291h6Lrq6FsYpSiKGFnJguvSg.png",
+        "src": "media/full/A291h6Lrq6FsYpSiKGFnJguvSg.webp",
         "alt": "Aperol — slide 3",
         "role": "Brand Activation & Environmental Design",
         "credits": "PR Activations & Objects"
@@ -516,7 +521,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "aperol-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/2CJ1G7ktXw8LjwCIIDvBmFsNvI.png",
+        "src": "media/full/2CJ1G7ktXw8LjwCIIDvBmFsNvI.webp",
         "alt": "Aperol — slide 4",
         "role": "Brand Activation & Environmental Design",
         "credits": "PR Activations & Objects"
@@ -524,7 +529,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "aperol-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/OCwwUoSsTyZSu8qYvJUbh6zJZE.png",
+        "src": "media/full/OCwwUoSsTyZSu8qYvJUbh6zJZE.webp",
         "alt": "Aperol — slide 5",
         "role": "Brand Activation & Environmental Design",
         "credits": "PR Activations & Objects"
@@ -532,7 +537,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "aperol-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/cqDaSwdmczzTwr0iDHBfjmYBWWQ.png",
+        "src": "media/full/cqDaSwdmczzTwr0iDHBfjmYBWWQ.webp",
         "alt": "Aperol — slide 6",
         "role": "Brand Activation & Environmental Design",
         "credits": "PR Activations & Objects"
@@ -540,7 +545,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "aperol-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/l2DqnaR4YQ2eHneGqBEPnnnRIk.png",
+        "src": "media/full/l2DqnaR4YQ2eHneGqBEPnnnRIk.webp",
         "alt": "Aperol — slide 7",
         "role": "Brand Activation & Environmental Design",
         "credits": "PR Activations & Objects"
@@ -559,16 +564,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
-        "fullSrc": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
+        "src": "media/thumb/SYwWdd0cmA51yDRsZjbhnLSsZs.webp",
+        "fullSrc": "media/full/SYwWdd0cmA51yDRsZjbhnLSsZs.webp",
         "alt": "Natura Siberica — visual 1",
         "position": 1
       },
       {
         "id": "natura-siberica-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
-        "fullSrc": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
+        "src": "media/thumb/POhVhCz9dI9JfnCCCtGcaxx8U.webp",
+        "fullSrc": "media/full/POhVhCz9dI9JfnCCCtGcaxx8U.webp",
         "alt": "Natura Siberica — visual 2",
         "position": 2
       }
@@ -577,7 +582,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
+        "src": "media/full/SYwWdd0cmA51yDRsZjbhnLSsZs.webp",
         "alt": "Natura Siberica — slide 1",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -585,7 +590,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
+        "src": "media/full/POhVhCz9dI9JfnCCCtGcaxx8U.webp",
         "alt": "Natura Siberica — slide 2",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -593,7 +598,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/yrD1rG6XRyo6xVKyhBZmbMVTCwo.png",
+        "src": "media/full/yrD1rG6XRyo6xVKyhBZmbMVTCwo.webp",
         "alt": "Natura Siberica — slide 3",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -601,7 +606,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/aMydGSb6D324jTefSLaAXB1nA.png",
+        "src": "media/full/aMydGSb6D324jTefSLaAXB1nA.webp",
         "alt": "Natura Siberica — slide 4",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -609,7 +614,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/0eHgoaBK9IBeo5WLMNGnkzhJfY.png",
+        "src": "media/full/0eHgoaBK9IBeo5WLMNGnkzhJfY.webp",
         "alt": "Natura Siberica — slide 5",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -617,7 +622,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/p2TGOqDa7NYN77EyvaRUA7CeXs.png",
+        "src": "media/full/p2TGOqDa7NYN77EyvaRUA7CeXs.webp",
         "alt": "Natura Siberica — slide 6",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -625,7 +630,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/yQD9Su6pXA04PsBLy5DjGhyYCc.png",
+        "src": "media/full/yQD9Su6pXA04PsBLy5DjGhyYCc.webp",
         "alt": "Natura Siberica — slide 7",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -633,7 +638,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl8",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/yAVb2QZ0GD6U5SoMXvyLZLd49g.png",
+        "src": "media/full/yAVb2QZ0GD6U5SoMXvyLZLd49g.webp",
         "alt": "Natura Siberica — slide 8",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -641,7 +646,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl9",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/6tVtjWLxfFeDSevjoVS2Yy6YfKU.png",
+        "src": "media/full/6tVtjWLxfFeDSevjoVS2Yy6YfKU.webp",
         "alt": "Natura Siberica — slide 9",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -649,7 +654,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl10",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/2cTEMneK93dWWPLzidzPapNo.png",
+        "src": "media/full/2cTEMneK93dWWPLzidzPapNo.webp",
         "alt": "Natura Siberica — slide 10",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -657,7 +662,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl11",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/t1ROS4OXZzNiKxKhAjWeQtbGgM.png",
+        "src": "media/full/t1ROS4OXZzNiKxKhAjWeQtbGgM.webp",
         "alt": "Natura Siberica — slide 11",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -665,7 +670,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "natura-siberica-sl12",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/tkmNjnIJe6KUQhWOSP4R6DOGrkw.png",
+        "src": "media/full/tkmNjnIJe6KUQhWOSP4R6DOGrkw.webp",
         "alt": "Natura Siberica — slide 12",
         "role": "Packaging Concept, Visualization & Prepress",
         "credits": "Art Direction: Elena Beschastnaya, Maya Mihaleva"
@@ -684,16 +689,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/iW6HK8ofJ0QCCXCNaWYvbIHthU.png",
-        "fullSrc": "https://framerusercontent.com/images/iW6HK8ofJ0QCCXCNaWYvbIHthU.png",
+        "src": "media/thumb/iW6HK8ofJ0QCCXCNaWYvbIHthU.webp",
+        "fullSrc": "media/full/iW6HK8ofJ0QCCXCNaWYvbIHthU.webp",
         "alt": "Music Typography — visual 1",
         "position": 1
       },
       {
         "id": "music-typography-research-book-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/mPVfqBQOx72Wn9MoSlz685ze81w.png",
-        "fullSrc": "https://framerusercontent.com/images/mPVfqBQOx72Wn9MoSlz685ze81w.png",
+        "src": "media/thumb/mPVfqBQOx72Wn9MoSlz685ze81w.webp",
+        "fullSrc": "media/full/mPVfqBQOx72Wn9MoSlz685ze81w.webp",
         "alt": "Music Typography — visual 2",
         "position": 2
       }
@@ -702,7 +707,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/iW6HK8ofJ0QCCXCNaWYvbIHthU.png",
+        "src": "media/full/iW6HK8ofJ0QCCXCNaWYvbIHthU.webp",
         "alt": "Music Typography — slide 1",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -710,7 +715,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/mPVfqBQOx72Wn9MoSlz685ze81w.png",
+        "src": "media/full/mPVfqBQOx72Wn9MoSlz685ze81w.webp",
         "alt": "Music Typography — slide 2",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -718,7 +723,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/W8mbxtLcbdTK1VN5NoK9lxhovlI.png",
+        "src": "media/full/W8mbxtLcbdTK1VN5NoK9lxhovlI.webp",
         "alt": "Music Typography — slide 3",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -726,7 +731,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/fpObAakgSaQvWC9TSm0fZDoDE.png",
+        "src": "media/full/fpObAakgSaQvWC9TSm0fZDoDE.webp",
         "alt": "Music Typography — slide 4",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -734,7 +739,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/RS40LOxFkmJu9recmmIpxlLf5Y.png",
+        "src": "media/full/RS40LOxFkmJu9recmmIpxlLf5Y.webp",
         "alt": "Music Typography — slide 5",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -742,7 +747,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/HTroYnE19cRJyqr72lbcUex7g.png",
+        "src": "media/full/HTroYnE19cRJyqr72lbcUex7g.webp",
         "alt": "Music Typography — slide 6",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -750,7 +755,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/TKy1qeIIOll3uTFgX8Bvu1yos.png",
+        "src": "media/full/TKy1qeIIOll3uTFgX8Bvu1yos.webp",
         "alt": "Music Typography — slide 7",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -758,7 +763,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl8",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/Jq3YRaVNzPTIipSjTjd32fLHDoE.png",
+        "src": "media/full/Jq3YRaVNzPTIipSjTjd32fLHDoE.webp",
         "alt": "Music Typography — slide 8",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -766,7 +771,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl9",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/uzS6oG6g34MJ2v7XtXPj0fMkR4.png",
+        "src": "media/full/uzS6oG6g34MJ2v7XtXPj0fMkR4.webp",
         "alt": "Music Typography — slide 9",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -774,7 +779,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl10",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/GXJc0FLdZTR0R9nwoynGcdJoHFw.png",
+        "src": "media/full/GXJc0FLdZTR0R9nwoynGcdJoHFw.webp",
         "alt": "Music Typography — slide 10",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -782,7 +787,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl11",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/MmErtRY6v5E040qgDdMTmZYjOug.png",
+        "src": "media/full/MmErtRY6v5E040qgDdMTmZYjOug.webp",
         "alt": "Music Typography — slide 11",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -790,7 +795,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-typography-research-book-sl12",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/akiPXF1emPBvrUD8GCswP3AFnI.png",
+        "src": "media/full/akiPXF1emPBvrUD8GCswP3AFnI.webp",
         "alt": "Music Typography — slide 12",
         "role": "Typography & Editorial Research Book",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -809,16 +814,17 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-s1",
         "kind": "video",
-        "src": "https://framerusercontent.com/assets/lBuM5Ah1pGI4GB7uBDvGVjig2zM.mp4",
-        "fullSrc": "https://framerusercontent.com/images/6V4gWyR0X2IP4mwfHQCvIDNJaao.png",
+        "src": "media/video/lBuM5Ah1pGI4GB7uBDvGVjig2zM.mp4",
+        "fullSrc": "media/full/6V4gWyR0X2IP4mwfHQCvIDNJaao.webp",
         "alt": "Glofi — visual 1",
-        "position": 1
+        "position": 1,
+        "poster": "media/poster/lBuM5Ah1pGI4GB7uBDvGVjig2zM.webp"
       },
       {
         "id": "glofi-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/6V4gWyR0X2IP4mwfHQCvIDNJaao.png",
-        "fullSrc": "https://framerusercontent.com/images/6V4gWyR0X2IP4mwfHQCvIDNJaao.png",
+        "src": "media/thumb/6V4gWyR0X2IP4mwfHQCvIDNJaao.webp",
+        "fullSrc": "media/full/6V4gWyR0X2IP4mwfHQCvIDNJaao.webp",
         "alt": "Glofi — visual 2",
         "position": 2
       }
@@ -827,15 +833,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl1",
         "kind": "video",
-        "src": "https://framerusercontent.com/assets/lBuM5Ah1pGI4GB7uBDvGVjig2zM.mp4",
+        "src": "media/video/lBuM5Ah1pGI4GB7uBDvGVjig2zM.mp4",
         "alt": "Glofi — slide 1",
         "role": "Brand Identity for AI Platform",
-        "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
+        "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov",
+        "poster": "media/poster/lBuM5Ah1pGI4GB7uBDvGVjig2zM.webp"
       },
       {
         "id": "glofi-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/6V4gWyR0X2IP4mwfHQCvIDNJaao.png",
+        "src": "media/full/6V4gWyR0X2IP4mwfHQCvIDNJaao.webp",
         "alt": "Glofi — slide 2",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -843,7 +850,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/PKfVggObweFPjEuvx21aUr4IDU.png",
+        "src": "media/full/PKfVggObweFPjEuvx21aUr4IDU.webp",
         "alt": "Glofi — slide 3",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -851,7 +858,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/YBcjJL3a6cUQRveZbyFUkosMFKE.png",
+        "src": "media/full/YBcjJL3a6cUQRveZbyFUkosMFKE.webp",
         "alt": "Glofi — slide 4",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -859,7 +866,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/Oj3qT9sopUsaHEQyLeTL35s2dQ.png",
+        "src": "media/full/Oj3qT9sopUsaHEQyLeTL35s2dQ.webp",
         "alt": "Glofi — slide 5",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -867,7 +874,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/2YITc3SpewT0dL5LFW1T1ZIXeB8.png",
+        "src": "media/full/2YITc3SpewT0dL5LFW1T1ZIXeB8.webp",
         "alt": "Glofi — slide 6",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -875,7 +882,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/mLUEOY043XeZrKsWxBimPUlqlU.png",
+        "src": "media/full/mLUEOY043XeZrKsWxBimPUlqlU.webp",
         "alt": "Glofi — slide 7",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -883,7 +890,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl8",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/scn96dlJsCxGHnVD2neErxR7Mg.png",
+        "src": "media/full/scn96dlJsCxGHnVD2neErxR7Mg.webp",
         "alt": "Glofi — slide 8",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -891,7 +898,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl9",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/OnvqLQuK3a3PK4SVWQa48hnTYk.png",
+        "src": "media/full/OnvqLQuK3a3PK4SVWQa48hnTYk.webp",
         "alt": "Glofi — slide 9",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -899,7 +906,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl10",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/VkI5DV1z2waEqbdhIk3SWVcg8h8.png",
+        "src": "media/full/VkI5DV1z2waEqbdhIk3SWVcg8h8.webp",
         "alt": "Glofi — slide 10",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -907,7 +914,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl11",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/Eg1J80dufJMXZKiJmlZety2GFs.png",
+        "src": "media/full/Eg1J80dufJMXZKiJmlZety2GFs.webp",
         "alt": "Glofi — slide 11",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -915,7 +922,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl12",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/Xhe5Qvbu524GJMzWkPsyaohYlT0.jpg",
+        "src": "media/full/Xhe5Qvbu524GJMzWkPsyaohYlT0.webp",
         "alt": "Glofi — slide 12",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -923,7 +930,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "glofi-sl13",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/EFaqVEkn1ng9aaZF1CIZ1L1rpBg.jpg",
+        "src": "media/full/EFaqVEkn1ng9aaZF1CIZ1L1rpBg.webp",
         "alt": "Glofi — slide 13",
         "role": "Brand Identity for AI Platform",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -942,16 +949,17 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-s1",
         "kind": "video",
-        "src": "https://framerusercontent.com/assets/neafI9Wo3YwQfwliIm7SNgdasU.mp4",
-        "fullSrc": "https://framerusercontent.com/images/kFime9bbPngJX9rKBb84EtEIM.png",
+        "src": "media/video/neafI9Wo3YwQfwliIm7SNgdasU.mp4",
+        "fullSrc": "media/full/kFime9bbPngJX9rKBb84EtEIM.webp",
         "alt": "4 (MV) — visual 1",
-        "position": 1
+        "position": 1,
+        "poster": "media/poster/neafI9Wo3YwQfwliIm7SNgdasU.webp"
       },
       {
         "id": "4-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/kFime9bbPngJX9rKBb84EtEIM.png",
-        "fullSrc": "https://framerusercontent.com/images/kFime9bbPngJX9rKBb84EtEIM.png",
+        "src": "media/thumb/kFime9bbPngJX9rKBb84EtEIM.webp",
+        "fullSrc": "media/full/kFime9bbPngJX9rKBb84EtEIM.webp",
         "alt": "4 (MV) — visual 2",
         "position": 2
       }
@@ -960,15 +968,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl1",
         "kind": "video",
-        "src": "https://framerusercontent.com/assets/neafI9Wo3YwQfwliIm7SNgdasU.mp4",
+        "src": "media/video/neafI9Wo3YwQfwliIm7SNgdasU.mp4",
         "alt": "4 (MV) — slide 1",
         "role": "Mixed Media, AI & Video Editing",
-        "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
+        "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_",
+        "poster": "media/poster/neafI9Wo3YwQfwliIm7SNgdasU.webp"
       },
       {
         "id": "4-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/kFime9bbPngJX9rKBb84EtEIM.png",
+        "src": "media/full/kFime9bbPngJX9rKBb84EtEIM.webp",
         "alt": "4 (MV) — slide 2",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -976,7 +985,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/jGp1GUMrn4W3B4rZwM2nFyKa4tk.png",
+        "src": "media/full/jGp1GUMrn4W3B4rZwM2nFyKa4tk.webp",
         "alt": "4 (MV) — slide 3",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -984,7 +993,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/qkHv8Y5pxZvvPlrFeoC3SYclYWE.png",
+        "src": "media/full/qkHv8Y5pxZvvPlrFeoC3SYclYWE.webp",
         "alt": "4 (MV) — slide 4",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -992,7 +1001,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/omYmtGdsSRt2LtFZQRJruljWk.png",
+        "src": "media/full/omYmtGdsSRt2LtFZQRJruljWk.webp",
         "alt": "4 (MV) — slide 5",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1000,7 +1009,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/mYUQ4LtregXOeEhzRreNpxCDBVc.png",
+        "src": "media/full/mYUQ4LtregXOeEhzRreNpxCDBVc.webp",
         "alt": "4 (MV) — slide 6",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1008,7 +1017,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/NmShHLUgfJcLFNE4RssGmKLx0k.png",
+        "src": "media/full/NmShHLUgfJcLFNE4RssGmKLx0k.webp",
         "alt": "4 (MV) — slide 7",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1016,7 +1025,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl8",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/w2UtMnQy8C7icp12v0L3PTfVY.png",
+        "src": "media/full/w2UtMnQy8C7icp12v0L3PTfVY.webp",
         "alt": "4 (MV) — slide 8",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1024,7 +1033,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl9",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/SYCCMH8DYHnZBBJQMhHQRq0xCbA.png",
+        "src": "media/full/SYCCMH8DYHnZBBJQMhHQRq0xCbA.webp",
         "alt": "4 (MV) — slide 9",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1032,7 +1041,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl10",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/myJPDgHibHIfRBdj79zrhdWKQ4.jpg",
+        "src": "media/full/myJPDgHibHIfRBdj79zrhdWKQ4.webp",
         "alt": "4 (MV) — slide 10",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1040,7 +1049,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl11",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/YcCfpaQDWSqLPasz9tYUmrRYEk.jpg",
+        "src": "media/full/YcCfpaQDWSqLPasz9tYUmrRYEk.webp",
         "alt": "4 (MV) — slide 11",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1048,7 +1057,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl12",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/yyMLhe7YNmNCrrCFPVRgEKdOflk.jpg",
+        "src": "media/full/yyMLhe7YNmNCrrCFPVRgEKdOflk.webp",
         "alt": "4 (MV) — slide 12",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1056,7 +1065,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "4-sl13",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/oR3XsTM6L7o7ZBxANFvSpgrrHE.jpg",
+        "src": "media/full/oR3XsTM6L7o7ZBxANFvSpgrrHE.webp",
         "alt": "4 (MV) — slide 13",
         "role": "Mixed Media, AI & Video Editing",
         "credits": "BenjaminGotBenz, Хестон · Edit & AI: @lovdeluxe_"
@@ -1075,16 +1084,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
-        "fullSrc": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
+        "src": "media/thumb/1Vkmg9ur3ieqaKscM0RwtwBtiM.webp",
+        "fullSrc": "media/full/1Vkmg9ur3ieqaKscM0RwtwBtiM.webp",
         "alt": "Zavernite — visual 1",
         "position": 1
       },
       {
         "id": "zavernite-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
-        "fullSrc": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
+        "src": "media/thumb/vCs8pgMpdYD5j4hOwCKJpmWpWY.webp",
+        "fullSrc": "media/full/vCs8pgMpdYD5j4hOwCKJpmWpWY.webp",
         "alt": "Zavernite — visual 2",
         "position": 2
       }
@@ -1093,7 +1102,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
+        "src": "media/full/1Vkmg9ur3ieqaKscM0RwtwBtiM.webp",
         "alt": "Zavernite — slide 1",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1101,7 +1110,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
+        "src": "media/full/vCs8pgMpdYD5j4hOwCKJpmWpWY.webp",
         "alt": "Zavernite — slide 2",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1109,7 +1118,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/1NVD1IcspKgqbEgPTBsy3e0nLb0.jpg",
+        "src": "media/full/1NVD1IcspKgqbEgPTBsy3e0nLb0.webp",
         "alt": "Zavernite — slide 3",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1117,7 +1126,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/1QVIotrAqAhKsCAMQz4DwVrNk1Y.jpg",
+        "src": "media/full/1QVIotrAqAhKsCAMQz4DwVrNk1Y.webp",
         "alt": "Zavernite — slide 4",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1125,7 +1134,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/Akw87Xq4D7kgQ5lxO29Z7WUA8.jpg",
+        "src": "media/full/Akw87Xq4D7kgQ5lxO29Z7WUA8.webp",
         "alt": "Zavernite — slide 5",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1133,7 +1142,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/vJbNhJi3VqUentpgTkOCj1JCPzk.jpg",
+        "src": "media/full/vJbNhJi3VqUentpgTkOCj1JCPzk.webp",
         "alt": "Zavernite — slide 6",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1141,7 +1150,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/LNCRNrQkHsHPRyQwYpX30CCb9U.jpg",
+        "src": "media/full/LNCRNrQkHsHPRyQwYpX30CCb9U.webp",
         "alt": "Zavernite — slide 7",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1149,7 +1158,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl8",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/A7NlnnPN6eaGdQI7XKEXKxPq5c.jpg",
+        "src": "media/full/A7NlnnPN6eaGdQI7XKEXKxPq5c.webp",
         "alt": "Zavernite — slide 8",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1157,7 +1166,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl9",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/eFQhqsv0orS4GPlfZsyHM5fAlA.jpg",
+        "src": "media/full/eFQhqsv0orS4GPlfZsyHM5fAlA.webp",
         "alt": "Zavernite — slide 9",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1165,7 +1174,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl10",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/9u9K67Q0nYZgrZOIDci0Kaw1vg0.jpg",
+        "src": "media/full/9u9K67Q0nYZgrZOIDci0Kaw1vg0.webp",
         "alt": "Zavernite — slide 10",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1173,7 +1182,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl11",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/48qGmEVbfoLW2ijteyI8Bj4V8Sk.jpg",
+        "src": "media/full/48qGmEVbfoLW2ijteyI8Bj4V8Sk.webp",
         "alt": "Zavernite — slide 11",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1181,7 +1190,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "zavernite-sl12",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/dOwrTiSO1G81dFScyfibbum3hzc.jpg",
+        "src": "media/full/dOwrTiSO1G81dFScyfibbum3hzc.webp",
         "alt": "Zavernite — slide 12",
         "role": "Brand Platform & Visual Identity",
         "credits": "Street Food Café Chain Rebranding"
@@ -1200,16 +1209,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "modular-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/N1OHA0IIuPbhqQaIxnKKvt35dY.png",
-        "fullSrc": "https://framerusercontent.com/images/N1OHA0IIuPbhqQaIxnKKvt35dY.png",
+        "src": "media/thumb/N1OHA0IIuPbhqQaIxnKKvt35dY.webp",
+        "fullSrc": "media/full/N1OHA0IIuPbhqQaIxnKKvt35dY.webp",
         "alt": "Modular — visual 1",
         "position": 1
       },
       {
         "id": "modular-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/QvwuGfauW6TkwaWQELPVbaQgL4.jpg",
-        "fullSrc": "https://framerusercontent.com/images/QvwuGfauW6TkwaWQELPVbaQgL4.jpg",
+        "src": "media/thumb/QvwuGfauW6TkwaWQELPVbaQgL4.webp",
+        "fullSrc": "media/full/QvwuGfauW6TkwaWQELPVbaQgL4.webp",
         "alt": "Modular — visual 2",
         "position": 2
       }
@@ -1218,7 +1227,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "modular-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/N1OHA0IIuPbhqQaIxnKKvt35dY.png",
+        "src": "media/full/N1OHA0IIuPbhqQaIxnKKvt35dY.webp",
         "alt": "Modular — slide 1",
         "role": "Modular Typeface & Lettering",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1226,7 +1235,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "modular-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/QvwuGfauW6TkwaWQELPVbaQgL4.jpg",
+        "src": "media/full/QvwuGfauW6TkwaWQELPVbaQgL4.webp",
         "alt": "Modular — slide 2",
         "role": "Modular Typeface & Lettering",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1234,7 +1243,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "modular-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/XthAdjM0UCrQBG00OwoEHH7ro8.jpg",
+        "src": "media/full/XthAdjM0UCrQBG00OwoEHH7ro8.webp",
         "alt": "Modular — slide 3",
         "role": "Modular Typeface & Lettering",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1242,7 +1251,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "modular-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/X37yBIGGIAc5aLvndNozvVJ5k.jpg",
+        "src": "media/full/X37yBIGGIAc5aLvndNozvVJ5k.webp",
         "alt": "Modular — slide 4",
         "role": "Modular Typeface & Lettering",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1250,7 +1259,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "modular-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/l6ZgWR6hNE1NMoepQfto91lABXU.jpg",
+        "src": "media/full/l6ZgWR6hNE1NMoepQfto91lABXU.webp",
         "alt": "Modular — slide 5",
         "role": "Modular Typeface & Lettering",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1258,7 +1267,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "modular-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/AgR1ntoLG8ija5r8AyZalhS1ZcE.jpg",
+        "src": "media/full/AgR1ntoLG8ija5r8AyZalhS1ZcE.webp",
         "alt": "Modular — slide 6",
         "role": "Modular Typeface & Lettering",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1266,7 +1275,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "modular-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/NukXDSWSEtGPcNhDW5w0rMah4.jpg",
+        "src": "media/full/NukXDSWSEtGPcNhDW5w0rMah4.webp",
         "alt": "Modular — slide 7",
         "role": "Modular Typeface & Lettering",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1285,16 +1294,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "nn-creative-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.jpg",
-        "fullSrc": "https://framerusercontent.com/images/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.jpg",
+        "src": "media/thumb/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.webp",
+        "fullSrc": "media/full/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.webp",
         "alt": "NN Creative — visual 1",
         "position": 1
       },
       {
         "id": "nn-creative-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/NOWdh92mM9cqzf2YfamqFFSzYjw.jpg",
-        "fullSrc": "https://framerusercontent.com/images/NOWdh92mM9cqzf2YfamqFFSzYjw.jpg",
+        "src": "media/thumb/NOWdh92mM9cqzf2YfamqFFSzYjw.webp",
+        "fullSrc": "media/full/NOWdh92mM9cqzf2YfamqFFSzYjw.webp",
         "alt": "NN Creative — visual 2",
         "position": 2
       }
@@ -1303,7 +1312,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "nn-creative-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.jpg",
+        "src": "media/full/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.webp",
         "alt": "NN Creative — slide 1",
         "role": "Visual Identity for Creative Industries Competition",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1311,7 +1320,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "nn-creative-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/NOWdh92mM9cqzf2YfamqFFSzYjw.jpg",
+        "src": "media/full/NOWdh92mM9cqzf2YfamqFFSzYjw.webp",
         "alt": "NN Creative — slide 2",
         "role": "Visual Identity for Creative Industries Competition",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1319,7 +1328,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "nn-creative-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/dAQmXwASffCASmiL87gB1328Jco.jpg",
+        "src": "media/full/dAQmXwASffCASmiL87gB1328Jco.webp",
         "alt": "NN Creative — slide 3",
         "role": "Visual Identity for Creative Industries Competition",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1327,7 +1336,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "nn-creative-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/myf0YlJiyb80baqWa46yu57BRSw.jpg",
+        "src": "media/full/myf0YlJiyb80baqWa46yu57BRSw.webp",
         "alt": "NN Creative — slide 4",
         "role": "Visual Identity for Creative Industries Competition",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1335,7 +1344,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "nn-creative-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/FrKJdyLRRvy2aEhiwSKSu77EPDI.jpg",
+        "src": "media/full/FrKJdyLRRvy2aEhiwSKSu77EPDI.webp",
         "alt": "NN Creative — slide 5",
         "role": "Visual Identity for Creative Industries Competition",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1343,7 +1352,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "nn-creative-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/HQSoHJDyilqG7ctNsu0gZUge6Y.jpg",
+        "src": "media/full/HQSoHJDyilqG7ctNsu0gZUge6Y.webp",
         "alt": "NN Creative — slide 6",
         "role": "Visual Identity for Creative Industries Competition",
         "credits": "Design: Semyon Shvetsov · Curator: Max Kuzhegetov"
@@ -1362,16 +1371,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "bariers-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/lPNEL5VGb5VmN0GaForZkh2TxnA.webp",
-        "fullSrc": "https://framerusercontent.com/images/lPNEL5VGb5VmN0GaForZkh2TxnA.webp",
+        "src": "media/thumb/lPNEL5VGb5VmN0GaForZkh2TxnA.webp",
+        "fullSrc": "media/full/lPNEL5VGb5VmN0GaForZkh2TxnA.webp",
         "alt": "Bariers — visual 1",
         "position": 1
       },
       {
         "id": "bariers-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/rOaBVqpAhWDvUbCTUblKLrHHf8.jpg",
-        "fullSrc": "https://framerusercontent.com/images/rOaBVqpAhWDvUbCTUblKLrHHf8.jpg",
+        "src": "media/thumb/rOaBVqpAhWDvUbCTUblKLrHHf8.webp",
+        "fullSrc": "media/full/rOaBVqpAhWDvUbCTUblKLrHHf8.webp",
         "alt": "Bariers — visual 2",
         "position": 2
       }
@@ -1380,7 +1389,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "bariers-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/lPNEL5VGb5VmN0GaForZkh2TxnA.webp",
+        "src": "media/full/lPNEL5VGb5VmN0GaForZkh2TxnA.webp",
         "alt": "Bariers — slide 1",
         "role": "Self Project — AI-Generated Visual Study",
         "credits": "Semyon Shvetsov"
@@ -1388,7 +1397,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "bariers-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/rOaBVqpAhWDvUbCTUblKLrHHf8.jpg",
+        "src": "media/full/rOaBVqpAhWDvUbCTUblKLrHHf8.webp",
         "alt": "Bariers — slide 2",
         "role": "Self Project — AI-Generated Visual Study",
         "credits": "Semyon Shvetsov"
@@ -1396,7 +1405,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "bariers-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/D887oOYNyalnws0ydAVumVVJlk.jpg",
+        "src": "media/full/D887oOYNyalnws0ydAVumVVJlk.webp",
         "alt": "Bariers — slide 3",
         "role": "Self Project — AI-Generated Visual Study",
         "credits": "Semyon Shvetsov"
@@ -1404,7 +1413,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "bariers-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/dpAs0coSna6HWJ8xKb9bAL22M.jpg",
+        "src": "media/full/dpAs0coSna6HWJ8xKb9bAL22M.webp",
         "alt": "Bariers — slide 4",
         "role": "Self Project — AI-Generated Visual Study",
         "credits": "Semyon Shvetsov"
@@ -1412,7 +1421,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "bariers-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/47UsvTDjYH1DdGQy5Hko0IQ7B0.jpg",
+        "src": "media/full/47UsvTDjYH1DdGQy5Hko0IQ7B0.webp",
         "alt": "Bariers — slide 5",
         "role": "Self Project — AI-Generated Visual Study",
         "credits": "Semyon Shvetsov"
@@ -1431,16 +1440,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-s-mainstaff",
         "kind": "image",
-        "src": "media/posters/mainstaff.jpg",
-        "fullSrc": "media/posters/mainstaff.jpg",
+        "src": "media/thumb/posters_mainstaff.webp",
+        "fullSrc": "media/full/posters_mainstaff.webp",
         "alt": "MAIN STAFF — Factory 3 poster",
         "position": 1
       },
       {
         "id": "posters-flyers-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/VUZgDhPOCzteegtluBxIqaN7hg.png",
-        "fullSrc": "https://framerusercontent.com/images/VUZgDhPOCzteegtluBxIqaN7hg.png",
+        "src": "media/thumb/VUZgDhPOCzteegtluBxIqaN7hg.webp",
+        "fullSrc": "media/full/VUZgDhPOCzteegtluBxIqaN7hg.webp",
         "alt": "Posters & Flyers — visual 1",
         "position": 2
       }
@@ -1449,7 +1458,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-mainstaff",
         "kind": "image",
-        "src": "media/posters/mainstaff.jpg",
+        "src": "media/full/posters_mainstaff.webp",
         "alt": "MAIN STAFF — Factory 3 poster",
         "role": "Poster & Flyer Design",
         "credits": "Semyon Shvetsov · Factory 3"
@@ -1457,7 +1466,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/VUZgDhPOCzteegtluBxIqaN7hg.png",
+        "src": "media/full/VUZgDhPOCzteegtluBxIqaN7hg.webp",
         "alt": "Posters & Flyers — slide 1",
         "role": "Posters & Music Event Flyers",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1465,7 +1474,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/StAg5sufhBSJL8MYaqPBIgPMUEg.png",
+        "src": "media/full/StAg5sufhBSJL8MYaqPBIgPMUEg.webp",
         "alt": "Posters & Flyers — slide 2",
         "role": "Posters & Music Event Flyers",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1473,7 +1482,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/3dEvn93cBSaz4Rao7Fzwms2S6jg.png",
+        "src": "media/full/3dEvn93cBSaz4Rao7Fzwms2S6jg.webp",
         "alt": "Posters & Flyers — slide 3",
         "role": "Posters & Music Event Flyers",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1481,7 +1490,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/dc6mruojODN3Z5ApFhvrlJkWI.png",
+        "src": "media/full/dc6mruojODN3Z5ApFhvrlJkWI.webp",
         "alt": "Posters & Flyers — slide 4",
         "role": "Posters & Music Event Flyers",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1489,7 +1498,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/DoWNpWbgprabT1NnxkeiCwJWK0.png",
+        "src": "media/full/DoWNpWbgprabT1NnxkeiCwJWK0.webp",
         "alt": "Posters & Flyers — slide 5",
         "role": "Posters & Music Event Flyers",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1497,7 +1506,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-sl6",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/vbSsH9NqaKgaDTaYxRlcIPtvmgU.png",
+        "src": "media/full/vbSsH9NqaKgaDTaYxRlcIPtvmgU.webp",
         "alt": "Posters & Flyers — slide 6",
         "role": "Posters & Music Event Flyers",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1505,7 +1514,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "posters-flyers-sl7",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/BlwG8dvZp1SvBdxUGQ4OxbCzzhA.png",
+        "src": "media/full/BlwG8dvZp1SvBdxUGQ4OxbCzzhA.webp",
         "alt": "Posters & Flyers — slide 7",
         "role": "Posters & Music Event Flyers",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1524,16 +1533,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-covers-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/BG4EEBCGrPZMqfIyXtWjYIpMM.png",
-        "fullSrc": "https://framerusercontent.com/images/BG4EEBCGrPZMqfIyXtWjYIpMM.png",
+        "src": "media/thumb/BG4EEBCGrPZMqfIyXtWjYIpMM.webp",
+        "fullSrc": "media/full/BG4EEBCGrPZMqfIyXtWjYIpMM.webp",
         "alt": "Music Covers — visual 1",
         "position": 1
       },
       {
         "id": "music-covers-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/J06APDgdjnwu4KDZsCnSOjQrm0.png",
-        "fullSrc": "https://framerusercontent.com/images/J06APDgdjnwu4KDZsCnSOjQrm0.png",
+        "src": "media/thumb/J06APDgdjnwu4KDZsCnSOjQrm0.webp",
+        "fullSrc": "media/full/J06APDgdjnwu4KDZsCnSOjQrm0.webp",
         "alt": "Music Covers — visual 2",
         "position": 2
       }
@@ -1542,7 +1551,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-covers-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/BG4EEBCGrPZMqfIyXtWjYIpMM.png",
+        "src": "media/full/BG4EEBCGrPZMqfIyXtWjYIpMM.webp",
         "alt": "Music Covers — slide 1",
         "role": "Album & Single Cover Artwork",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1550,7 +1559,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-covers-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/J06APDgdjnwu4KDZsCnSOjQrm0.png",
+        "src": "media/full/J06APDgdjnwu4KDZsCnSOjQrm0.webp",
         "alt": "Music Covers — slide 2",
         "role": "Album & Single Cover Artwork",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1558,7 +1567,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-covers-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/pgHrSKPhzmLF5HeaEemCBAt4m0.png",
+        "src": "media/full/pgHrSKPhzmLF5HeaEemCBAt4m0.webp",
         "alt": "Music Covers — slide 3",
         "role": "Album & Single Cover Artwork",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1566,7 +1575,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-covers-sl4",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/gnjnjJb8Av6SO8JKZZ0j3KZVsqw.png",
+        "src": "media/full/gnjnjJb8Av6SO8JKZZ0j3KZVsqw.webp",
         "alt": "Music Covers — slide 4",
         "role": "Album & Single Cover Artwork",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1574,7 +1583,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "music-covers-sl5",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/gP3l3ZOl76JWb40ZLdV7wPpzc.png",
+        "src": "media/full/gP3l3ZOl76JWb40ZLdV7wPpzc.webp",
         "alt": "Music Covers — slide 5",
         "role": "Album & Single Cover Artwork",
         "credits": "Selected Works · Semyon Shvetsov"
@@ -1593,16 +1602,16 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "plgthg-na-svalke-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/oVlEMwk8Iwo9lafi0y31BqW6MSU.jpg",
-        "fullSrc": "https://framerusercontent.com/images/oVlEMwk8Iwo9lafi0y31BqW6MSU.jpg",
+        "src": "media/thumb/oVlEMwk8Iwo9lafi0y31BqW6MSU.webp",
+        "fullSrc": "media/full/oVlEMwk8Iwo9lafi0y31BqW6MSU.webp",
         "alt": "plgthg — na svalke — visual 1",
         "position": 1
       },
       {
         "id": "plgthg-na-svalke-s2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/EpNrAApimTMOk31vDF57ThCKCo.jpg",
-        "fullSrc": "https://framerusercontent.com/images/EpNrAApimTMOk31vDF57ThCKCo.jpg",
+        "src": "media/thumb/EpNrAApimTMOk31vDF57ThCKCo.webp",
+        "fullSrc": "media/full/EpNrAApimTMOk31vDF57ThCKCo.webp",
         "alt": "plgthg — na svalke — visual 2",
         "position": 2
       }
@@ -1611,7 +1620,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "plgthg-na-svalke-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/oVlEMwk8Iwo9lafi0y31BqW6MSU.jpg",
+        "src": "media/full/oVlEMwk8Iwo9lafi0y31BqW6MSU.webp",
         "alt": "plgthg — na svalke — slide 1",
         "role": "Visual Direction & Graphics",
         "credits": "Semyon Shvetsov"
@@ -1619,7 +1628,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "plgthg-na-svalke-sl2",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/EpNrAApimTMOk31vDF57ThCKCo.jpg",
+        "src": "media/full/EpNrAApimTMOk31vDF57ThCKCo.webp",
         "alt": "plgthg — na svalke — slide 2",
         "role": "Visual Direction & Graphics",
         "credits": "Semyon Shvetsov"
@@ -1627,7 +1636,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "plgthg-na-svalke-sl3",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/s0Y6CDWGGGo9mvILyfn1LoAVuo.jpg",
+        "src": "media/full/s0Y6CDWGGGo9mvILyfn1LoAVuo.webp",
         "alt": "plgthg — na svalke — slide 3",
         "role": "Visual Direction & Graphics",
         "credits": "Semyon Shvetsov"
@@ -1646,8 +1655,8 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "metasystem-promo-s1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/leofF9Ub48T1y1XUjiRmNCarMBw.jpg",
-        "fullSrc": "https://framerusercontent.com/images/leofF9Ub48T1y1XUjiRmNCarMBw.jpg",
+        "src": "media/thumb/leofF9Ub48T1y1XUjiRmNCarMBw.webp",
+        "fullSrc": "media/full/leofF9Ub48T1y1XUjiRmNCarMBw.webp",
         "alt": "Metasystem Promo — visual 1",
         "position": 1
       }
@@ -1656,7 +1665,7 @@ const RAW_PROJECTS: Project[] = [
       {
         "id": "metasystem-promo-sl1",
         "kind": "image",
-        "src": "https://framerusercontent.com/images/leofF9Ub48T1y1XUjiRmNCarMBw.jpg",
+        "src": "media/full/leofF9Ub48T1y1XUjiRmNCarMBw.webp",
         "alt": "Metasystem Promo — slide 1",
         "role": "Promo Visuals & Typeface Design",
         "credits": "Semyon Shvetsov"
@@ -1671,10 +1680,12 @@ export const PROJECTS: Project[] = RAW_PROJECTS.map((project) => ({
     ...slot,
     src: resolveUrl(slot.src),
     fullSrc: slot.fullSrc ? resolveUrl(slot.fullSrc) : undefined,
+    poster: slot.poster ? resolveUrl(slot.poster) : undefined,
   })),
   slides: project.slides.map((slide) => ({
     ...slide,
     src: resolveUrl(slide.src),
+    poster: slide.poster ? resolveUrl(slide.poster) : undefined,
   })),
 }));
 

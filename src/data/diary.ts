@@ -5,197 +5,206 @@ export interface DiaryItem {
   caption: string;
 }
 
-export const DIARY_ITEMS: DiaryItem[] = [
+const resolveUrl = (url: string): string =>
+  /^https?:\/\//.test(url) ? url : `${import.meta.env.BASE_URL}${url.replace(/^\//, '')}`;
+
+const RAW_DIARY_ITEMS: DiaryItem[] = [
   {
     "id": "archive-1",
-    "thumb": "https://framerusercontent.com/images/SNlOgMrzRCRlvxpMteFnQGIcSlg.png",
-    "large": "https://framerusercontent.com/images/SNlOgMrzRCRlvxpMteFnQGIcSlg.png",
+    "thumb": "media/thumb/SNlOgMrzRCRlvxpMteFnQGIcSlg.webp",
+    "large": "media/full/SNlOgMrzRCRlvxpMteFnQGIcSlg.webp",
     "caption": "Archive 01"
   },
   {
     "id": "archive-2",
-    "thumb": "https://framerusercontent.com/images/c8FjoE3lgxvN4Otz4dKdV9S9gUc.png",
-    "large": "https://framerusercontent.com/images/c8FjoE3lgxvN4Otz4dKdV9S9gUc.png",
+    "thumb": "media/thumb/c8FjoE3lgxvN4Otz4dKdV9S9gUc.webp",
+    "large": "media/full/c8FjoE3lgxvN4Otz4dKdV9S9gUc.webp",
     "caption": "Archive 02"
   },
   {
     "id": "archive-3",
-    "thumb": "https://framerusercontent.com/images/4Vj3kRcZt8yzALhTZWHm09W2058.png",
-    "large": "https://framerusercontent.com/images/4Vj3kRcZt8yzALhTZWHm09W2058.png",
+    "thumb": "media/thumb/4Vj3kRcZt8yzALhTZWHm09W2058.webp",
+    "large": "media/full/4Vj3kRcZt8yzALhTZWHm09W2058.webp",
     "caption": "Archive 03"
   },
   {
     "id": "archive-4",
-    "thumb": "https://framerusercontent.com/images/PvulNt14pwQe12ZuvyXwIXpjB40.webp",
-    "large": "https://framerusercontent.com/images/PvulNt14pwQe12ZuvyXwIXpjB40.webp",
+    "thumb": "media/thumb/PvulNt14pwQe12ZuvyXwIXpjB40.webp",
+    "large": "media/full/PvulNt14pwQe12ZuvyXwIXpjB40.webp",
     "caption": "Archive 04"
   },
   {
     "id": "archive-5",
-    "thumb": "https://framerusercontent.com/images/3eWYQOdpWmbqs07Mw6alZhy3tFI.webp",
-    "large": "https://framerusercontent.com/images/3eWYQOdpWmbqs07Mw6alZhy3tFI.webp",
+    "thumb": "media/thumb/3eWYQOdpWmbqs07Mw6alZhy3tFI.webp",
+    "large": "media/full/3eWYQOdpWmbqs07Mw6alZhy3tFI.webp",
     "caption": "Archive 05"
   },
   {
     "id": "archive-6",
-    "thumb": "https://framerusercontent.com/images/tTmQfJE0OloNdvANCuoLRfXGBTo.png",
-    "large": "https://framerusercontent.com/images/tTmQfJE0OloNdvANCuoLRfXGBTo.png",
+    "thumb": "media/thumb/tTmQfJE0OloNdvANCuoLRfXGBTo.webp",
+    "large": "media/full/tTmQfJE0OloNdvANCuoLRfXGBTo.webp",
     "caption": "Archive 06"
   },
   {
     "id": "archive-7",
-    "thumb": "https://framerusercontent.com/images/4hVDyKjMZXKPmLIP8D8HSF11olw.png",
-    "large": "https://framerusercontent.com/images/4hVDyKjMZXKPmLIP8D8HSF11olw.png",
+    "thumb": "media/thumb/4hVDyKjMZXKPmLIP8D8HSF11olw.webp",
+    "large": "media/full/4hVDyKjMZXKPmLIP8D8HSF11olw.webp",
     "caption": "Archive 07"
   },
   {
     "id": "archive-8",
-    "thumb": "https://framerusercontent.com/images/Wk1DHwsEuZpAl2YExcJi0yFwR8.png",
-    "large": "https://framerusercontent.com/images/Wk1DHwsEuZpAl2YExcJi0yFwR8.png",
+    "thumb": "media/thumb/Wk1DHwsEuZpAl2YExcJi0yFwR8.webp",
+    "large": "media/full/Wk1DHwsEuZpAl2YExcJi0yFwR8.webp",
     "caption": "Archive 08"
   },
   {
     "id": "diary-kintsugi-jewelry-9",
-    "thumb": "https://framerusercontent.com/images/V1TS935v2yI2tXch4Axefm6Sc.png",
-    "large": "https://framerusercontent.com/images/V1TS935v2yI2tXch4Axefm6Sc.png",
+    "thumb": "media/thumb/V1TS935v2yI2tXch4Axefm6Sc.webp",
+    "large": "media/full/V1TS935v2yI2tXch4Axefm6Sc.webp",
     "caption": "Kintsugi Jewelry — 2024"
   },
   {
     "id": "diary-kintsugi-jewelry-10",
-    "thumb": "https://framerusercontent.com/images/1v1LjK59Yc25kqk67g2ZAbUmao.png",
-    "large": "https://framerusercontent.com/images/1v1LjK59Yc25kqk67g2ZAbUmao.png",
+    "thumb": "media/thumb/1v1LjK59Yc25kqk67g2ZAbUmao.webp",
+    "large": "media/full/1v1LjK59Yc25kqk67g2ZAbUmao.webp",
     "caption": "Kintsugi Jewelry — 2024"
   },
   {
     "id": "diary-natura-siberica-11",
-    "thumb": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
-    "large": "https://framerusercontent.com/images/SYwWdd0cmA51yDRsZjbhnLSsZs.png",
+    "thumb": "media/thumb/SYwWdd0cmA51yDRsZjbhnLSsZs.webp",
+    "large": "media/full/SYwWdd0cmA51yDRsZjbhnLSsZs.webp",
     "caption": "Natura Siberica — 2024"
   },
   {
     "id": "diary-natura-siberica-12",
-    "thumb": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
-    "large": "https://framerusercontent.com/images/POhVhCz9dI9JfnCCCtGcaxx8U.png",
+    "thumb": "media/thumb/POhVhCz9dI9JfnCCCtGcaxx8U.webp",
+    "large": "media/full/POhVhCz9dI9JfnCCCtGcaxx8U.webp",
     "caption": "Natura Siberica — 2024"
   },
   {
     "id": "diary-demix-x-aytlo-13",
-    "thumb": "https://framerusercontent.com/images/PLK27lk25nedMzuFopexRzf2bNE.png",
-    "large": "https://framerusercontent.com/images/PLK27lk25nedMzuFopexRzf2bNE.png",
+    "thumb": "media/thumb/PLK27lk25nedMzuFopexRzf2bNE.webp",
+    "large": "media/full/PLK27lk25nedMzuFopexRzf2bNE.webp",
     "caption": "Demix × Outlaw — 2025"
   },
   {
     "id": "diary-demix-x-aytlo-14",
-    "thumb": "https://framerusercontent.com/images/45WC9r0hm766ow49omjBlquIQ.jpg",
-    "large": "https://framerusercontent.com/images/45WC9r0hm766ow49omjBlquIQ.jpg",
+    "thumb": "media/thumb/45WC9r0hm766ow49omjBlquIQ.webp",
+    "large": "media/full/45WC9r0hm766ow49omjBlquIQ.webp",
     "caption": "Demix × Outlaw — 2025"
   },
   {
     "id": "diary-void-15",
-    "thumb": "https://framerusercontent.com/images/SRxK8L7M7FoScWNF8xXROykZc.png",
-    "large": "https://framerusercontent.com/images/SRxK8L7M7FoScWNF8xXROykZc.png",
+    "thumb": "media/thumb/SRxK8L7M7FoScWNF8xXROykZc.webp",
+    "large": "media/full/SRxK8L7M7FoScWNF8xXROykZc.webp",
     "caption": "VOID — 2024"
   },
   {
     "id": "diary-void-16",
-    "thumb": "https://framerusercontent.com/images/w2StFmS9WLrVrUMOlJXmpsjguE.png",
-    "large": "https://framerusercontent.com/images/w2StFmS9WLrVrUMOlJXmpsjguE.png",
+    "thumb": "media/thumb/w2StFmS9WLrVrUMOlJXmpsjguE.webp",
+    "large": "media/full/w2StFmS9WLrVrUMOlJXmpsjguE.webp",
     "caption": "VOID — 2024"
   },
   {
     "id": "diary-9mice-17",
-    "thumb": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
-    "large": "https://framerusercontent.com/images/gkDwCbagAyyuiYKPZow2Io8D5Q.jpg",
+    "thumb": "media/thumb/gkDwCbagAyyuiYKPZow2Io8D5Q.webp",
+    "large": "media/full/gkDwCbagAyyuiYKPZow2Io8D5Q.webp",
     "caption": "9mice Afterparty — 2024"
   },
   {
     "id": "diary-9mice-18",
-    "thumb": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
-    "large": "https://framerusercontent.com/images/3IDnaDhZE6D7WGOqRoB0uRoNSoU.jpg",
+    "thumb": "media/thumb/3IDnaDhZE6D7WGOqRoB0uRoNSoU.webp",
+    "large": "media/full/3IDnaDhZE6D7WGOqRoB0uRoNSoU.webp",
     "caption": "9mice Afterparty — 2024"
   },
   {
     "id": "diary-aperol-19",
-    "thumb": "https://framerusercontent.com/images/fri1n27wQOuJB7NDw5rIiA9dIE.png",
-    "large": "https://framerusercontent.com/images/fri1n27wQOuJB7NDw5rIiA9dIE.png",
+    "thumb": "media/thumb/fri1n27wQOuJB7NDw5rIiA9dIE.webp",
+    "large": "media/full/fri1n27wQOuJB7NDw5rIiA9dIE.webp",
     "caption": "Aperol — 2024"
   },
   {
     "id": "diary-aperol-20",
-    "thumb": "https://framerusercontent.com/images/ffBoaFBGUgESplWykvwdUYdIoW4.png",
-    "large": "https://framerusercontent.com/images/ffBoaFBGUgESplWykvwdUYdIoW4.png",
+    "thumb": "media/thumb/ffBoaFBGUgESplWykvwdUYdIoW4.webp",
+    "large": "media/full/ffBoaFBGUgESplWykvwdUYdIoW4.webp",
     "caption": "Aperol — 2024"
   },
   {
     "id": "diary-music-typography-research-book-21",
-    "thumb": "https://framerusercontent.com/images/iW6HK8ofJ0QCCXCNaWYvbIHthU.png",
-    "large": "https://framerusercontent.com/images/iW6HK8ofJ0QCCXCNaWYvbIHthU.png",
+    "thumb": "media/thumb/iW6HK8ofJ0QCCXCNaWYvbIHthU.webp",
+    "large": "media/full/iW6HK8ofJ0QCCXCNaWYvbIHthU.webp",
     "caption": "Music Typography — 2024"
   },
   {
     "id": "diary-music-typography-research-book-22",
-    "thumb": "https://framerusercontent.com/images/mPVfqBQOx72Wn9MoSlz685ze81w.png",
-    "large": "https://framerusercontent.com/images/mPVfqBQOx72Wn9MoSlz685ze81w.png",
+    "thumb": "media/thumb/mPVfqBQOx72Wn9MoSlz685ze81w.webp",
+    "large": "media/full/mPVfqBQOx72Wn9MoSlz685ze81w.webp",
     "caption": "Music Typography — 2024"
   },
   {
     "id": "diary-glofi-23",
-    "thumb": "https://framerusercontent.com/images/6V4gWyR0X2IP4mwfHQCvIDNJaao.png",
-    "large": "https://framerusercontent.com/images/6V4gWyR0X2IP4mwfHQCvIDNJaao.png",
+    "thumb": "media/thumb/6V4gWyR0X2IP4mwfHQCvIDNJaao.webp",
+    "large": "media/full/6V4gWyR0X2IP4mwfHQCvIDNJaao.webp",
     "caption": "Glofi — 2024"
   },
   {
     "id": "diary-glofi-24",
-    "thumb": "https://framerusercontent.com/images/PKfVggObweFPjEuvx21aUr4IDU.png",
-    "large": "https://framerusercontent.com/images/PKfVggObweFPjEuvx21aUr4IDU.png",
+    "thumb": "media/thumb/PKfVggObweFPjEuvx21aUr4IDU.webp",
+    "large": "media/full/PKfVggObweFPjEuvx21aUr4IDU.webp",
     "caption": "Glofi — 2024"
   },
   {
     "id": "diary-zavernite-25",
-    "thumb": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
-    "large": "https://framerusercontent.com/images/1Vkmg9ur3ieqaKscM0RwtwBtiM.jpg",
+    "thumb": "media/thumb/1Vkmg9ur3ieqaKscM0RwtwBtiM.webp",
+    "large": "media/full/1Vkmg9ur3ieqaKscM0RwtwBtiM.webp",
     "caption": "Zavernite — 2024"
   },
   {
     "id": "diary-zavernite-26",
-    "thumb": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
-    "large": "https://framerusercontent.com/images/vCs8pgMpdYD5j4hOwCKJpmWpWY.jpg",
+    "thumb": "media/thumb/vCs8pgMpdYD5j4hOwCKJpmWpWY.webp",
+    "large": "media/full/vCs8pgMpdYD5j4hOwCKJpmWpWY.webp",
     "caption": "Zavernite — 2024"
   },
   {
     "id": "diary-4-27",
-    "thumb": "https://framerusercontent.com/images/kFime9bbPngJX9rKBb84EtEIM.png",
-    "large": "https://framerusercontent.com/images/kFime9bbPngJX9rKBb84EtEIM.png",
+    "thumb": "media/thumb/kFime9bbPngJX9rKBb84EtEIM.webp",
+    "large": "media/full/kFime9bbPngJX9rKBb84EtEIM.webp",
     "caption": "4 (MV) — 2025"
   },
   {
     "id": "diary-4-28",
-    "thumb": "https://framerusercontent.com/images/jGp1GUMrn4W3B4rZwM2nFyKa4tk.png",
-    "large": "https://framerusercontent.com/images/jGp1GUMrn4W3B4rZwM2nFyKa4tk.png",
+    "thumb": "media/thumb/jGp1GUMrn4W3B4rZwM2nFyKa4tk.webp",
+    "large": "media/full/jGp1GUMrn4W3B4rZwM2nFyKa4tk.webp",
     "caption": "4 (MV) — 2025"
   },
   {
     "id": "diary-modular-29",
-    "thumb": "https://framerusercontent.com/images/N1OHA0IIuPbhqQaIxnKKvt35dY.png",
-    "large": "https://framerusercontent.com/images/N1OHA0IIuPbhqQaIxnKKvt35dY.png",
+    "thumb": "media/thumb/N1OHA0IIuPbhqQaIxnKKvt35dY.webp",
+    "large": "media/full/N1OHA0IIuPbhqQaIxnKKvt35dY.webp",
     "caption": "Modular — 2024"
   },
   {
     "id": "diary-modular-30",
-    "thumb": "https://framerusercontent.com/images/QvwuGfauW6TkwaWQELPVbaQgL4.jpg",
-    "large": "https://framerusercontent.com/images/QvwuGfauW6TkwaWQELPVbaQgL4.jpg",
+    "thumb": "media/thumb/QvwuGfauW6TkwaWQELPVbaQgL4.webp",
+    "large": "media/full/QvwuGfauW6TkwaWQELPVbaQgL4.webp",
     "caption": "Modular — 2024"
   },
   {
     "id": "diary-nn-creative-31",
-    "thumb": "https://framerusercontent.com/images/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.jpg",
-    "large": "https://framerusercontent.com/images/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.jpg",
+    "thumb": "media/thumb/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.webp",
+    "large": "media/full/TDJ6r8hW2wRRBXRmeh1TSMlwU5Q.webp",
     "caption": "NN Creative — 2024"
   },
   {
     "id": "diary-nn-creative-32",
-    "thumb": "https://framerusercontent.com/images/NOWdh92mM9cqzf2YfamqFFSzYjw.jpg",
-    "large": "https://framerusercontent.com/images/NOWdh92mM9cqzf2YfamqFFSzYjw.jpg",
+    "thumb": "media/thumb/NOWdh92mM9cqzf2YfamqFFSzYjw.webp",
+    "large": "media/full/NOWdh92mM9cqzf2YfamqFFSzYjw.webp",
     "caption": "NN Creative — 2024"
   }
 ];
+
+export const DIARY_ITEMS: DiaryItem[] = RAW_DIARY_ITEMS.map((item) => ({
+  ...item,
+  thumb: resolveUrl(item.thumb),
+  large: resolveUrl(item.large),
+}));

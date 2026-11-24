@@ -15,6 +15,17 @@ export function HomePage({
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [hoveredProjectId, setHoveredProjectId] = useState<string | null>(null);
   const [backdropSrc, setBackdropSrc] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState<boolean>(() =>
+    typeof window !== 'undefined' ? window.innerWidth <= 1024 : false,
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 1024px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
 
   useEffect(() => {
     registerScrollReset(() => {
@@ -59,7 +70,41 @@ export function HomePage({
       el.removeEventListener('wheel', handleWheel);
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [onScrollCollapseChange]);
+  }, [onScrollCollapseChange, isMobile]);
+
+  if (isMobile) {
+    return (
+      <main className="home-mobile" aria-label="Selected projects">
+        {PROJECTS.map((project, idx) => {
+          const lead = project.slots[0];
+          if (!lead) return null;
+          return (
+            <article key={project.id} className="mobile-card">
+              <Link to={`/project/${project.slug}`}>
+                <MediaItem
+                  kind={lead.kind}
+                  src={lead.src}
+                  poster={lead.poster}
+                  alt={lead.alt}
+                  loading={idx < 3 ? 'eager' : 'lazy'}
+                  fetchPriority={idx === 0 ? 'high' : undefined}
+                  className="mobile-card__media"
+                />
+                <div className="mobile-card__caption">
+                  <p>{project.category}</p>
+                  <div className="mobile-card__row">
+                    <span className="mobile-card__roman">{project.roman}</span>
+                    <span>{project.client}</span>
+                    <span>{project.year}</span>
+                  </div>
+                </div>
+              </Link>
+            </article>
+          );
+        })}
+      </main>
+    );
+  }
 
   return (
     <>
@@ -118,8 +163,10 @@ export function HomePage({
                       <MediaItem
                         kind={slot.kind}
                         src={slot.src}
+                        poster={slot.poster}
                         alt={slot.alt}
-                        loading={projectIdx < 2 ? 'eager' : 'lazy'}
+                        loading={projectIdx < 3 ? 'eager' : 'lazy'}
+                        fetchPriority={projectIdx === 0 && slot.position === 1 ? 'high' : undefined}
                         className="slot-media"
                       />
                     </Link>
@@ -129,35 +176,6 @@ export function HomePage({
             );
           })}
         </div>
-      </main>
-
-      {/* Mobile vertical feed (< 1024px) */}
-      <main className="home-mobile" aria-label="Selected projects">
-        {PROJECTS.map((project, idx) => {
-          const lead = project.slots[0];
-          if (!lead) return null;
-          return (
-            <article key={project.id} className="mobile-card">
-              <Link to={`/project/${project.slug}`}>
-                <MediaItem
-                  kind={lead.kind}
-                  src={lead.src}
-                  alt={lead.alt}
-                  loading={idx < 2 ? 'eager' : 'lazy'}
-                  className="mobile-card__media"
-                />
-                <div className="mobile-card__caption">
-                  <p>{project.category}</p>
-                  <div className="mobile-card__row">
-                    <span className="mobile-card__roman">{project.roman}</span>
-                    <span>{project.client}</span>
-                    <span>{project.year}</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-          );
-        })}
       </main>
     </>
   );

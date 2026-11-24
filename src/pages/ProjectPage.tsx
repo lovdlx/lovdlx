@@ -34,6 +34,19 @@ export function ProjectPage() {
 
   const currentSlide = project.slides[index] ?? project.slides[0];
 
+  // Preload adjacent image slides so clicking NEXT/PREV is instant
+  useEffect(() => {
+    if (total <= 1) return;
+    const neighborIndices = [(index + 1) % total, (index - 1 + total) % total];
+    for (const i of neighborIndices) {
+      const slide = project.slides[i];
+      if (slide && slide.kind === 'image') {
+        const img = new Image();
+        img.src = slide.src;
+      }
+    }
+  }, [index, total, project.slides]);
+
   return (
     <main className="project-page">
       <article className="project-stage">
@@ -54,8 +67,10 @@ export function ProjectPage() {
             key={currentSlide.id}
             kind={currentSlide.kind}
             src={currentSlide.src}
+            poster={currentSlide.poster}
             alt={currentSlide.alt}
             loading="eager"
+            fetchPriority="high"
             className="project-viewer__media"
           />
         </div>
