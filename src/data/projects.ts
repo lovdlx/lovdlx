@@ -292,6 +292,35 @@ const RAW_PROJECTS: Project[] = [
   {
     "id": "client-4",
     "roman": "IV",
+    "slug": "fakshiza",
+    "client": "@факшиза",
+    "year": "2025",
+    "category": "Art Direction & Key Visual",
+    "description": "Handcrafted analog key visual for rising underground artist @факшиза, created for her solo shows in Saint Petersburg (CULT) and Moscow (Dex).\n\nBuilt entirely by hand as a physical collage before scanning — combining cut-out paper lettering, raw chalk drawings on black paper, taped framing, and direct-flash portraiture. The tactile DIY approach captures the raw, unfiltered energy of the artist's sound and stands out against glossy digital event posters.",
+    "slots": [
+      {
+        "id": "fakshiza-s1",
+        "kind": "image",
+        "src": "media/thumb/fakshiza_01.webp",
+        "fullSrc": "media/full/fakshiza_01.webp",
+        "alt": "@факшиза — handcrafted analog key visual",
+        "position": 1
+      }
+    ],
+    "slides": [
+      {
+        "id": "fakshiza-sl1",
+        "kind": "image",
+        "src": "media/full/fakshiza_01.webp",
+        "alt": "@факшиза — handcrafted analog key visual",
+        "role": "Art Direction & Analog Key Visual",
+        "credits": "Semyon Shvetsov · Fleek Media"
+      }
+    ]
+  },
+  {
+    "id": "client-5",
+    "roman": "V",
     "slug": "demix-x-aytlo",
     "client": "Demix × Outlaw",
     "year": "2025",
@@ -343,8 +372,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-5",
-    "roman": "V",
+    "id": "client-6",
+    "roman": "VI",
     "slug": "void",
     "client": "VOID",
     "year": "2024",
@@ -468,8 +497,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-6",
-    "roman": "VI",
+    "id": "client-7",
+    "roman": "VII",
     "slug": "aperol",
     "client": "Aperol",
     "year": "2024",
@@ -553,8 +582,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-7",
-    "roman": "VII",
+    "id": "client-8",
+    "roman": "VIII",
     "slug": "natura-siberica",
     "client": "Natura Siberica",
     "year": "2024",
@@ -678,8 +707,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-8",
-    "roman": "VIII",
+    "id": "client-9",
+    "roman": "IX",
     "slug": "music-typography-research-book",
     "client": "Music Typography",
     "year": "2024",
@@ -803,8 +832,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-9",
-    "roman": "IX",
+    "id": "client-10",
+    "roman": "X",
     "slug": "glofi",
     "client": "Glofi",
     "year": "2024",
@@ -938,8 +967,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-10",
-    "roman": "X",
+    "id": "client-11",
+    "roman": "XI",
     "slug": "4",
     "client": "4 (MV)",
     "year": "2025",
@@ -1073,8 +1102,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-11",
-    "roman": "XI",
+    "id": "client-12",
+    "roman": "XII",
     "slug": "zavernite",
     "client": "Zavernite",
     "year": "2024",
@@ -1198,8 +1227,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-12",
-    "roman": "XII",
+    "id": "client-13",
+    "roman": "XIII",
     "slug": "modular",
     "client": "Modular",
     "year": "2024",
@@ -1283,8 +1312,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-13",
-    "roman": "XIII",
+    "id": "client-14",
+    "roman": "XIV",
     "slug": "nn-creative",
     "client": "NN Creative",
     "year": "2024",
@@ -1360,8 +1389,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-14",
-    "roman": "XIV",
+    "id": "client-15",
+    "roman": "XV",
     "slug": "bariers",
     "client": "Bariers",
     "year": "2024",
@@ -1429,8 +1458,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-15",
-    "roman": "XV",
+    "id": "client-16",
+    "roman": "XVI",
     "slug": "posters-flyers",
     "client": "Posters & Flyers",
     "year": "2024",
@@ -1522,8 +1551,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-16",
-    "roman": "XVI",
+    "id": "client-17",
+    "roman": "XVII",
     "slug": "music-covers",
     "client": "Music Covers",
     "year": "2024",
@@ -1591,8 +1620,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-17",
-    "roman": "XVII",
+    "id": "client-18",
+    "roman": "XVIII",
     "slug": "plgthg-na-svalke",
     "client": "plgthg — na svalke",
     "year": "2024",
@@ -1644,8 +1673,8 @@ const RAW_PROJECTS: Project[] = [
     ]
   },
   {
-    "id": "client-18",
-    "roman": "XVIII",
+    "id": "client-19",
+    "roman": "XIX",
     "slug": "metasystem-promo",
     "client": "Metasystem Promo",
     "year": "2024",
