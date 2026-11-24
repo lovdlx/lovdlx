@@ -3,6 +3,9 @@ import { Link, useParams } from 'react-router-dom';
 import { getProjectBySlug, PROJECTS } from '../data/projects';
 import { MediaItem } from '../components/MediaItem';
 
+const IMAGE_AUTOPLAY_MS = 4500;
+const VIDEO_AUTOPLAY_MS = 8000;
+
 export function ProjectPage() {
   const { slug } = useParams<{ slug: string }>();
   const project = (slug ? getProjectBySlug(slug) : undefined) ?? PROJECTS[0];
@@ -46,6 +49,38 @@ export function ProjectPage() {
       }
     }
   }, [index, total, project.slides]);
+
+  // Auto-advance on inactivity (resets on any slide change; pauses when tab is hidden)
+  useEffect(() => {
+    if (total <= 1) return;
+    const delay =
+      currentSlide.kind === 'video' ? VIDEO_AUTOPLAY_MS : IMAGE_AUTOPLAY_MS;
+
+    let timerId: number | undefined;
+
+    const schedule = () => {
+      window.clearTimeout(timerId);
+      if (!document.hidden) {
+        timerId = window.setTimeout(next, delay);
+      }
+    };
+
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        window.clearTimeout(timerId);
+      } else {
+        schedule();
+      }
+    };
+
+    schedule();
+    document.addEventListener('visibilitychange', onVisibilityChange);
+
+    return () => {
+      window.clearTimeout(timerId);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
+    };
+  }, [index, total, currentSlide.kind, next]);
 
   return (
     <main className="project-page">
