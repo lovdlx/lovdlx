@@ -98,44 +98,18 @@ export function SidebarDesktop({
             [CONTACTS]
           </button>
           <ul className="sidebar-sub">
-            <li>
-              <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
-            </li>
-            <li>
-              <a
-                href={SITE.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {SITE.instagramHandle}
-              </a>
-            </li>
-            {SITE.telegramHandle && SITE.telegramUrl && (
-              <li>
+            {SITE.contacts.map((contact) => (
+              <li key={contact.href}>
                 <a
-                  href={SITE.telegramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={contact.href}
+                  target={contact.external ? '_blank' : undefined}
+                  rel={contact.external ? 'noopener noreferrer' : undefined}
                 >
-                  {SITE.telegramHandle}
+                  {contact.label}
                 </a>
               </li>
-            )}
+            ))}
           </ul>
-
-          {SITE.secondaryLinkLabel && SITE.secondaryLinkUrl && (
-            <ul className="sidebar-sub sidebar-sub--extra">
-              <li>
-                <a
-                  href={SITE.secondaryLinkUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {SITE.secondaryLinkLabel}
-                </a>
-              </li>
-            </ul>
-          )}
 
           <ul className="sidebar-sub sidebar-sub--extra">
             <li>

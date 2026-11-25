@@ -80,40 +80,17 @@ export function HeaderMobile() {
         <section className="mobile-drawer__section">
           <p className="mobile-drawer__label">[CONTACTS]</p>
           <ul>
-            <li>
-              <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
-            </li>
-            <li>
-              <a
-                href={SITE.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {SITE.instagramHandle}
-              </a>
-            </li>
-            {SITE.telegramHandle && SITE.telegramUrl && (
-              <li>
+            {SITE.contacts.map((contact) => (
+              <li key={contact.href}>
                 <a
-                  href={SITE.telegramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={contact.href}
+                  target={contact.external ? '_blank' : undefined}
+                  rel={contact.external ? 'noopener noreferrer' : undefined}
                 >
-                  {SITE.telegramHandle}
+                  {contact.label}
                 </a>
               </li>
-            )}
-            {SITE.secondaryLinkLabel && SITE.secondaryLinkUrl && (
-              <li style={{ marginTop: 12 }}>
-                <a
-                  href={SITE.secondaryLinkUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {SITE.secondaryLinkLabel}
-                </a>
-              </li>
-            )}
+            ))}
             <li style={{ marginTop: 12 }}>
               <Link to="/visual-diary" onClick={() => setOpen(false)}>
                 {SITE.visualDiaryLabel}
